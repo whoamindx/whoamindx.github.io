@@ -1,0 +1,26 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           /:year/:title
+# relative_permalinks: true
+
+# Setup
+title:               Gabriel
+tagline:             ''
+description:         'Olá, seja bem vindo ao meu blog, me chamo Gabriel Napoleão, sou fascinado por desenvolvimento web. Estou me graduando em Sistemas de Informação na DeVry Fanor e resido em Fortaleza. Estou sempre a procura de conhecimento.' #'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:                 http://gabrielndr.github.io
+baseurl:             ''
+paginate:            5
+
+# contacts
+contacts:
+  facebook: http://facebook.com/Gabrielndr99
+  github: https://github.com/gabrielndr
+  email: gabriel.ndr.sky@gmail.com
+  # twitter:
+  # linkedin:
+  # googleplus:
+  spotify: https://open.spotify.com/user/gabriel_ndr
+
+# Custom vars
+version:             1.0.0
