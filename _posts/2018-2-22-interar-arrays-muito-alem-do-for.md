@@ -17,7 +17,7 @@ Isso é o que o nosso querido pai Google nos diz. É básicamente a ação de vo
 let persons = [
     "Gabriel",
     "Eduardo",
-    "Davi
+    "Davi"
 ];
 
 // Exibindo o nome de todas as pessoas que exista no array
@@ -38,7 +38,7 @@ Este faz o mesmo que o codigo anterior, porém escrita em menos código e mais f
 let persons = [
     "Gabriel",
     "Eduardo",
-    "Davi
+    "Davi"
 ];
 
 // Exibindo o nome de todas as pessoas que exista no array utilizando o forEach
