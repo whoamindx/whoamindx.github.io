@@ -100,9 +100,8 @@ let users = [
   {name: "João", isAdult: false}
 ];
 
-/* Esta variável será booleana, inicialmente true e dependendo da
-condição irá receber falsa se algum usuário não
-for de maior */
+/* Esta variável será booleana, inicialmente true e dependendo
+da condição irá receber falsa se algum usuário não for de maior */
 let allAdult = true;
 
 // Forma antiga
