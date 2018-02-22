@@ -101,7 +101,8 @@ let users = [
 ];
 
 /* Esta variável será booleana, inicialmente true e dependendo
-da condição irá receber falsa se algum usuário não for de maior */
+da condição irá receber falsa se algum usuário não for de
+maior */
 let allAdult = true;
 
 // Forma antiga
