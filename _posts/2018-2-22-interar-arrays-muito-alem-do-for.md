@@ -15,14 +15,14 @@ Isso é o que o nosso querido pai Google nos diz. É básicamente a ação de vo
 {% highlight js %}
 // Array com o nome de pessoas.
 let persons = [
-    "Gabriel",
-    "Eduardo",
-    "Davi"
+  "Gabriel",
+  "Eduardo",
+  "Davi"
 ];
 
 // Exibindo o nome de todas as pessoas que exista no array
 for (var i = 0; i < persons.length; i++){
-    console.log(persons[i]);
+   console.log(persons[i]);
 }
 {% endhighlight %}
 
@@ -36,14 +36,15 @@ Este faz o mesmo que o codigo anterior, porém escrita em menos código e mais f
 
 {% highlight js %}
 let persons = [
-    "Gabriel",
-    "Eduardo",
-    "Davi"
+  "Gabriel",
+  "Eduardo",
+  "Davi"
 ];
 
-// Exibindo o nome de todas as pessoas que exista no array utilizando o forEach
+/* Exibindo o nome de todas as pessoas que exista
+no array utilizando o forEach */
 persons.forEach(function(person){
-    console.log(person);
+  console.log(person);
 })
 {% endhighlight %}
 
@@ -57,17 +58,17 @@ Este método ele filtra o array (o nome já diz né), mas pense o seguinte, imag
 
 {% highlight js %}
 let users = [
-    {name: "Gabriel", isAdult: true},
-    {name: "Eduardo", isAdult: true},
-    {name: "João", isAdult: false}
+  {name: "Gabriel", isAdult: true},
+  {name: "Eduardo", isAdult: true},
+  {name: "João", isAdult: false}
 ];
 
 let adultUsers = [];
 
 users.forEach(function(user){
-    if(user.isAdult){
-      adultUsers.push(user)
-    }
+  if(user.isAdult){
+    adultUsers.push(user)
+  }
 })
 {% endhighlight %}
 
@@ -75,14 +76,14 @@ Com o filter ficaria:
 
 {% highlight js %}
 let users = [
-    {name: "Gabriel", isAdult: true},
-    {name: "Eduardo", isAdult: true},
-    {name: "João", isAdult: false}
+  {name: "Gabriel", isAdult: true},
+  {name: "Eduardo", isAdult: true},
+  {name: "João", isAdult: false}
 ];
 
 // Olha só que diferença
 users = users.filter(function(user){
-    return user.isAdult;
+  return user.isAdult;
 });
 {% endhighlight %}
 
@@ -94,18 +95,20 @@ Este método ele verifica se **todos** os elementos do array satisfarça a algum
 
 {% highlight js %}
 let users = [
-    {name: "Gabriel", isAdult: true},
-    {name: "Eduardo", isAdult: true},
-    {name: "João", isAdult: false}
+  {name: "Gabriel", isAdult: true},
+  {name: "Eduardo", isAdult: true},
+  {name: "João", isAdult: false}
 ];
 
-// Esta variável será booleana, inicialmente true e dependendo da condição irá receber falsa se algum usuário não for de maior
+/* Esta variável será booleana, inicialmente true e dependendo da
+condição irá receber falsa se algum usuário não
+for de maior */
 let allAdult = true;
 
 // Forma antiga
 for (var i = 0; i < users.length; i++){
   if(!users[i].isAdult){
-	  allAdult = false;
+    allAdult = false;
   }
 }
 
@@ -124,14 +127,15 @@ Este faz o inverso do `every`, ao invés de retorna true se todos os elementos s
 
 {% highlight js %}
 let users = [
-    {name: "Gabriel", isAdult: true},
-    {name: "Eduardo", isAdult: true},
-    {name: "João", isAdult: false}
+  {name: "Gabriel", isAdult: true},
+  {name: "Eduardo", isAdult: true},
+  {name: "João", isAdult: false}
 ];
 
 let someAdult;
 
-// Queremos saber se existe pelo menos um usuário que seja de menor
+/* Queremos saber se existe pelo menos um
+usuário que seja de menor */
 someAdult = users.some(function(user){
   return !user.isAdult;
 });
@@ -146,20 +150,21 @@ Com este método você pode de certa forma "traduzir" ou "modificar" valores do 
 
 {% highlight js %}
 let products = [
-    {name: "Café", price: 3.00},
-    {name: "Leite", price: 4.00},
-    {name: "Suco", price: 2.50}
+  {name: "Café", price: 3.00},
+  {name: "Leite", price: 4.00},
+  {name: "Suco", price: 2.50}
 ];
 
 // Produtos com seus descontos
 let newProducts;
 
 newProducts = products.map(function(product){
-	product.price = product.price - (product.price*0.10);
-	return product
+  product.price = product.price - (product.price*0.10);
+  return product
 });
 
-// newProducts agora é uma copia do array products porém com o preço de desconto
+/* newProducts agora é uma copia do array products
+porém com o preço de desconto */
 {% endhighlight %}
 
 Sem muita complexidade, e sem muita dificuldade e o melhor, em poucas linhas de código.
@@ -171,13 +176,14 @@ Com o reduce você pode percorrer o array e ir valores ou seja, acumulando os va
 {% highlight js %}
 // Suponha que você já possua o array com seus descontos
 let products = [
-    {name: "Café", price: 2.70},
-    {name: "Leite", price: 3.60},
-    {name: "Suco", price: 2.25}
+  {name: "Café", price: 2.70},
+  {name: "Leite", price: 3.60},
+  {name: "Suco", price: 2.25}
 ];
 
 // Valor total
 let total;
+
 // Agora vamos fazer o total dos produtos
 total = products.reduce(function(valorAtual, produto){
   return valorAtual + produto.price;
