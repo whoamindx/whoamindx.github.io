@@ -576,16 +576,43 @@ a.pagination-item:hover {
       color: #4c8ec7;
       transition: .5s;
     }
-  #triangle{
-    height: 0;
-    width: 0;
-    margin: 0 auto 20px;
-    border-top: 0;
-    border-right: 150px solid white;
-    border-bottom: 300px solid transparent;
-    border-left: 150px solid white;
-    background: url(../i.jpg) 220px -50px;
-    background-size: 320px;
+  .triangle-wrap {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+  }
+  .triangle {
+    background: grey;
+    position: absolute;
+    bottom: -50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transform: rotate(45deg) skew(20deg, 20deg);
+       -moz-transform: rotate(45deg) skew(20deg, 20deg);
+        -ms-transform: rotate(45deg) skew(20deg, 20deg);
+            transform: rotate(45deg) skew(20deg, 20deg);
+  }
+  .triangle-reset {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transform: skew(-20deg, -20deg) rotate(-45deg);
+       -moz-transform: skew(-20deg, -20deg) rotate(-45deg);
+        -ms-transform: skew(-20deg, -20deg) rotate(-45deg);
+            transform: skew(-20deg, -20deg) rotate(-45deg);
+  }
+  .triangle-content {
+        background: url(../i.jpg) no-repeat;
+      background-position: 60px 0px;
+      background-size: cover;
+      position: relative;
+      width: 90%;
+      height: 800px;
+      top: -254px;
+      left: -13px;
   }
   #welcome h1{
     margin: 10px auto 30px;
