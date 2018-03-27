@@ -581,7 +581,7 @@ a.pagination-item:hover {
       height: 400px;
       position: relative;
       overflow: hidden;
-      margin: 0 auto;
+      margin: 0 auto 20px;
   }
   .triangle {
     background: grey;
@@ -620,3 +620,17 @@ a.pagination-item:hover {
     font-size: 18px;
     width: 320px;
   }
+
+@media scren and (max-width: 431px){
+  .triangle-wrap{
+    width: 280px;
+    height: 280px;
+  }
+  .triangle-content {
+    background-position: 0px 50px;
+    background-size: cover;
+    height: 680px;
+    top: -254px;
+    left: 14px;
+  }
+}
