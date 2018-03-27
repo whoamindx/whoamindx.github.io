@@ -618,7 +618,7 @@ a.pagination-item:hover {
     margin: 10px auto 30px;
     text-align: justify;
     font-size: 18px;
-    width: 320px;
+    max-width: 320px;
   }
 
 @media screen and (max-width: 431px){
