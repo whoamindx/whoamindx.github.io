@@ -3,13 +3,13 @@ layout: page
 title: Sobre mim
 ---
 
-Sou só mais um garoto nesse vasto universo a procura de conhecimento, estou me graduando em Sistemas de Informação na DeVry Fanor, moro em Fortaleza e sou fascinado por Desenvolvimento Web. Curto o Back End, porém as tecnologias Front End me chamam mais a atenção, principalmente a linguagem JavaScript. Atualmente sou desenvolvedor WordPress.
+Desenvolvedor Front End, ama JavaScript e vive uma vida open source. Me graduando em Sistemas de Informação na UniFanor Wyden, moro em Fortaleza e atuamente palestrante da comunidade WordPress Fortaleza.
 
 ### Skills
 * HTML
 * CSS
-* SASS
 * JS
+* SASS
 * Bootstrap (mobile-first)
 * jQuery
 * AngularJS
