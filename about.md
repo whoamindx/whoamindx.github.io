@@ -7,17 +7,16 @@ Desenvolvedor Front End, ama JavaScript e vive uma vida open source. Me graduand
 
 ### Skills
 * HTML
-* CSS
-* JS
-* SASS
-* Bootstrap (mobile-first)
-* jQuery
-* AngularJS
+* CSS (SASS)
+* Responsive - Mobile First
+* Css Frameworks (Bootstrap, Materialize)
+* JavaScript (Vanilla JS, jQuery, AngularJS)
+* NodeJS - NPM
 * Gulp
+* Git
 * PHP
 * WordPress
-* Pair Programming
-* XP
+* Agile - Scrum - Pair Programming - XP
 
 <!-- <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
