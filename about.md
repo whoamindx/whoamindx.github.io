@@ -16,6 +16,8 @@ Desenvolvedor Front End, ama JavaScript e vive uma vida open source. Me graduand
 * Gulp
 * PHP
 * WordPress
+* Pair Programming
+* XP
 
 <!-- <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
