@@ -5,7 +5,7 @@ title: Onkeydown, Onkeypress ou Onkeyup?
 
 Bem, em JavaScript já é bem conhecido os famosos 'onkeys' que muitos desenvolvedores não sabem quais as diferenças entre eles e acabam por usar qualquer um que funcione (digo isto pois eu mesmo já fui assim). Então resolvi fazer um post sobre e esclarecer sobre as diferenças entre onkeydown, onkeypress e onkeyup.
 
-Bem, a diferença básica entre eles é que: Em um elemento, o evento `onkeydown` é sempre o primeiro a disparar (quando a tecla é pressionada), o segundo é o `onkeypress` (também quandoa a tecla é pressionada) e por último é o `onkeyup`(quando solta a tecla e o seu input é adicionada/registrada no DOM).
+Bem, a diferença básica entre eles é que: Em um elemento, o evento `onkeydown` é sempre o primeiro a disparar (quando a tecla é pressionada), o segundo é o `onkeypress` (também quando a a tecla é pressionada) e por último é o `onkeyup`(quando solta a tecla e o seu input é adicionada/registrada no DOM).
 
 Você deve tá se perguntando agora qual a diferença entre o `onkeydown` e o `onkeypress`. Bem, o primeiro não faz diferenciação entre letras maiúsculas e minúsculas (para esse, tanto um 'M' como o 'm' irá gerar 77 da tabela ASCII, que seria o 'M', ou seja, para este evento todos o caracteres são considerados maiúsculas).
 Já o `onkeypress` faz essa diferenciação, e não é disparado com teclas que não geram caracters (como ALT, CTRL e Backspace, F1-F9), já o `onkeydown` dispara caso seja pressionado o CTRL por exemplo.
