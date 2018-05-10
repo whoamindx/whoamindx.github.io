@@ -4,7 +4,7 @@ title: Meu Portfólio
 ---
 
 ## Sites
-
+* [Sind Justiça Ceará](http://sindjusticaceara.org.br/){:target="_blank"}
 * [Rachel Marques](http://rachelmarques.org.br/){:target="_blank"}
 * [Força Digital](http://forcadigital.com/){:target="_blank"}
 * [Relpi Alimentos](http://campanhanaweb.com.br/relpi/){:target="_blank"}
