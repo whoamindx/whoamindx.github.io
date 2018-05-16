@@ -14,7 +14,8 @@ paginate:            5
 
 # contacts
 contacts:
-  facebook: http://facebook.com/Gabrielndr99
+  facebook: https://facebook.com/Gabrielndr99
+  instagram: https://www.instagram.com/gabrielndr/
   github: https://github.com/gabrielndr
   email: gabriel.ndr.sky@gmail.com
   # twitter:
