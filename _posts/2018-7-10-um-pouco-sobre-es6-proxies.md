@@ -74,7 +74,7 @@ let meFalse = new Proxy(me, {
 
 Não se assuste, basicamente estou instanciando no `meFalse` um novo Proxy, que recebe como argumento o objeto ao qual ele quer interceptar (no caso o objeto `me`) e o segundo argumento é um objeto `handler` que vai conter as conhecidas `traps` (Métodos que fornecem acesso à propriedade, podendo manipular o fluxo entre o sistema e as propriedades do objeto).
 
-Note que dentro temos a propriedade **get**, ele é padrão para interceptar caso aconteça um _getter_. E você não precisa ser nenhum mestre das advinhações para descobrir como faz para intecpetar um _setter_, só colocar um método **set**. Existem muitos outros como **has**, **setPrototypeOf**, **getPrototypeOf** e etc. O objetivo aqui é entender o Proxy e não dar um Wikipedia dele.
+Note que dentro temos a propriedade **get**, ele é padrão para interceptar caso aconteça um _getter_. E você não precisa ser nenhum mestre das advinhações para descobrir como faz para intecepetar um _setter_, só colocar um método **set**. Existem muitos outros como **has**, **setPrototypeOf**, **getPrototypeOf** e etc. O objetivo aqui é entender o Proxy e não dar um Wikipedia dele.
 
 Repare também que o método recebe três argumentos (`target`,`prop` e `receiver`). Só um momento estou respirando... O `target` é o objeto que está sendo inteceptado, nesse caso é o objeto **me**, ele é o objeto real que é encapsulado pelo proxy. O `prop` é a propriedade do objeto sendo acessado (métodos também são interceptados). O terceiro `receiver` é uma referência ao próprio Proxy.
 
