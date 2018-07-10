@@ -25,7 +25,15 @@
   {% elsif page.layout == "post" %}
   <meta property="og:title" content="{{ page.title }} ⚡ Gabriel Napoleão"">
   <meta property="og:description" content="{{ page.content | strip_html | truncatewords: 250}}">
-  <meta property="og:url" content="https://gabrielndr.github.io/">
+  <meta property="og:url" content="{{ site.url }}{{ post.url }}">
+  <meta property="og:site_name" content="{{ page.title }} ⚡ Gabriel Napoleão">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords: 250}}">
+  <meta name="twitter:title" content="{{ page.title }} ⚡ Gabriel Napoleão">
+  {% else }
+  <meta property="og:title" content="{{ page.title }} ⚡ Gabriel Napoleão"">
+  <meta property="og:description" content="{{ page.content | strip_html | truncatewords: 250}}">
+  <meta property="og:url" content="https://gabrielndr.github.io{{ page.url }}">
   <meta property="og:site_name" content="{{ page.title }} ⚡ Gabriel Napoleão">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords: 250}}">
