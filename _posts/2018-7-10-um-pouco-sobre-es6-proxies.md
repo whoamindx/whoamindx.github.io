@@ -78,7 +78,7 @@ Note que dentro temos a propriedade **get**, ele é padrão para interceptar cas
 
 Repare também que o método recebe três argumentos (`target`,`prop` e `receiver`). Só um momento estou respirando... O `target` é o objeto que está sendo inteceptado, nesse caso é o objeto **me**, ele é o objeto real que é encapsulado pelo proxy. O `prop` é a propriedade do objeto sendo acessado (métodos também são interceptados). O terceiro `receiver` é uma referência ao próprio Proxy.
 
-Agora não tem mais segredo, estou apenas verificando se a propriedade é nome, se for eu exibo "João". Também posso por exemplo retornar meu nome e sobrenome nome como:
+Agora não tem mais segredo, estou apenas verificando se a propriedade é nome, se for eu exibo "João". Também posso por exemplo retornar meu nome e sobrenome como:
 
 {% highlight js %}
 .
@@ -92,6 +92,6 @@ Agora não tem mais segredo, estou apenas verificando se a propriedade é nome, 
 
 Nesse caso, quando eu acessasse `meFalse.nome` ele retornaria **Gabriel Napoleão**.
 
-Agora a pergunta que com certeza você está fazendo: "Quando vou utilizar isso?". Suponhamos que você tem um sitema MVC aonde o model quando for alterado tenha que atualizar a sua view, ao invés de misturar código da view no model para atualizar, no controller você poderia usar do Proxy para se passar pelo model que está sendo atualizada e interceptando as propriedades aonde caso ela seja alterada, você injetaria a atualização da View dentro do `set` do Proxy.
+Agora a pergunta que com certeza você está fazendo: "Quando vou utilizar isso?". Suponhamos que você tem um sistema MVC onde o model quando for alterado tenha que atualizar a sua view, ao invés de misturar código da view no model para atualizar, no controller você poderia fazer uso do Proxy para se passar pelo model que está sendo atualizado e interceptando as propriedades onde caso elas sejam alteradas, você injetaria a atualização da View dentro do `set` do Proxy.
 
 Bem, por hora é somente isso, caso não tenha entendido algo deixe um comentário que tentarei tirar sua dúvida.
