@@ -3,11 +3,11 @@ layout: post
 title: Um pouco sobre ES6 Proxies
 ---
 
-Sim sim, sei que já estamos no ES9 e este é um recurso do ES2015 mas decidi escrever esse post por dois motivos: conheci este recurso recetemente e simplesmente amei; segundo que a droga desse blog é meu e se eu quiser eu escrevo até sobre como fazer AJAX no IE8!
+Sim sim, sei que já estamos no ES9 e este é um recurso do ES2015 mas decidi escrever esse post por dois motivos: conheci este recurso recentemente e simplesmente amei; segundo que a droga desse blog é meu e se eu quiser eu escrevo até sobre como fazer AJAX no IE8!
 
-Brincadeiras a parte, mas falando seriamente agora: conversei com alguns Dev e poucos conheciam essa feature, e como eu gosto muito de contar para o mundo as novidades que eu descubro eu decidi escrever este post.
+Brincadeiras a parte, mas falando seriamente agora: conversei com alguns Devs e poucos conheciam essa feature, e como eu gosto muito de contar para o mundo as novidades que eu descubro eu decidi escrever este post.
 
-Mas vamos logo partir para o que interessa, e como de costume vou dar a definicão de o que é a coisa só para vocês ficaram com a aquela linda frase na cabeça: "Não entendi nada mas vou continuar lendo para ver se entendo" (Como de costume em todos os artigos de desenvolvimento que lemos):
+Mas vamos logo partir para o que interessa, e como de costume vou dar a definicão de o que é a coisa só para vocês ficarem com a aquela linda frase na cabeça: "Não entendi nada, mas vou continuar lendo para ver se entendo" (Como de costume em todos os artigos de desenvolvimento que lemos):
 
 <div class="message">
   O objeto Proxy é usado para definir comportamentos customizados para operações fundamentais (por exemplo, pesquisa de propriedade, atribuição, enumeração, invocação de função, etc.).
@@ -28,7 +28,7 @@ Se continuou lendo até aqui e não entendeu nada, <a href="http://loopinfinito.
 	No ECMAScript 6, um  _proxy_  é um objeto que  **representa**  um outro. Ele é capaz de interceptar chamadas às propriedades do objeto alvo, podendo até mesmo alterar o resultado da chamada.
 </div>
 
-Bem, agora a definição desleixada que eu dou para facilitar mais ainda o seu entendimento é: Proxy no JavaScript nada mais é do que uma classe chama **Proxy** que ao instancia ela na sua aplicação ela passa a se tornar uma algo "falso", um "mentiroso" no seu sistema podendo se passar por algum objeto.
+Bem, agora a definição desleixada que eu dou para facilitar mais ainda o seu entendimento é: Proxy no JavaScript nada mais é do que uma classe chamada **Proxy** que ao instanciá-la na sua aplicação ela passa a se tornar uma algo "falso", um "mentiroso" no seu sistema podendo se passar por algum objeto.
 
 ## No código tudo fica mais fácil
 
@@ -59,7 +59,7 @@ Até aí tudo bem, nada demais ok? Agora irei instanciar essa classe:
 let me = new Pessoa("Gabriel", 19);
 {% endhighlight %}
 
-Ainda nada de interessante, se acessarmos **me.nome** irá retornar **Gabriel**, o mesmo com a idade irá retonar 19. O objetivo aqui desse post é você entender como funciona a Proxy, não irei entrar em muito detalhes sobre o uso dela para não nos extendermos aqui. Agora vamos criar um `mentiroso`, alguém se passando por mim, quero que quando alguem acessar **me.nome** não retorne **Gabriel** mas sim **João**.
+Ainda nada de interessante, se acessarmos **me.nome** irá retornar **Gabriel**, o mesmo com a idade no qual irá retonar 19. O objetivo aqui desse post é você entender como funciona a Proxy, não irei entrar em muito detalhes sobre o uso dela para não nos extendermos aqui. Agora vamos criar um `mentiroso`, alguém se passando por mim, quero que quando alguem acessar **me.nome** não retorne **Gabriel** mas sim **João**.
 
 Para criarmos usaremos a seguinte sintaxe para criar esse **mentiroso**:
 
@@ -74,7 +74,7 @@ let meFalse = new Proxy(me, {
 
 Não se assuste, basicamente estou instanciando no `meFalse` um novo Proxy, que recebe como argumento o objeto ao qual ele quer interceptar (no caso o objeto `me`) e o segundo argumento é um objeto `handler` que vai conter as conhecidas `traps` (Métodos que fornecem acesso à propriedade, podendo manipular o fluxo entre o sistema e as propriedades do objeto).
 
-Note que dentro temos a propriedade **get**, ele é padrão para interceptar caso acontece um _getter_. E você não precisa ser nenhum mestre das advinhações para descobrir como faz para intecpetar um _setter_, só colocar um método **set**. Existem muitos outros como **has**, **setPrototypeOf**, **getPrototypeOf** e etc. O objetivo aqui é entender o Proxy e não dar um Wikipedia dele.
+Note que dentro temos a propriedade **get**, ele é padrão para interceptar caso aconteça um _getter_. E você não precisa ser nenhum mestre das advinhações para descobrir como faz para intecpetar um _setter_, só colocar um método **set**. Existem muitos outros como **has**, **setPrototypeOf**, **getPrototypeOf** e etc. O objetivo aqui é entender o Proxy e não dar um Wikipedia dele.
 
 Repare também que o método recebe três argumentos (`target`,`prop` e `receiver`). Só um momento estou respirando... O `target` é o objeto que está sendo inteceptado, nesse caso é o objeto **me**, ele é o objeto real que é encapsulado pelo proxy. O `prop` é a propriedade do objeto sendo acessado (métodos também são interceptados). O terceiro `receiver` é uma referência ao próprio Proxy.
 
