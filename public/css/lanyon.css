@@ -582,6 +582,7 @@ a.pagination-item:hover {
       position: relative;
       overflow: hidden;
       margin: 0 auto 20px;
+      border-radius: 100%;
   }
   .triangle {
     background: grey;
