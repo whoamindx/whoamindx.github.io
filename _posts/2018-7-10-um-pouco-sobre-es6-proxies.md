@@ -24,7 +24,7 @@ Se continuou lendo até aqui e não entendeu nada, <a href="http://loopinfinito.
 
 <div class="message">
 	O termo  _proxy_  tem suas origens no Direito dos países de língua inglesa. Um  _proxy_  é alguém com poderes legais de representar uma outra pessoa. No Brasil seria algo como alguém que possui uma procuração para representar uma outra. Por analogia, o termo acabou sendo usado na computação para designar  _softwares_  que atuam por outros como, por exemplo, um  <a href="http://en.wikipedia.org/wiki/Proxy_server" target="_blank">Web Proxy</a>, que funciona como um intermediário para requisições de um cliente a um servidor externo.
-
+	<br>
 	No ECMAScript 6, um  _proxy_  é um objeto que  **representa**  um outro. Ele é capaz de interceptar chamadas às propriedades do objeto alvo, podendo até mesmo alterar o resultado da chamada.
 </div>
 
@@ -35,21 +35,19 @@ Bem, agora a definição desleixada que eu dou para facilitar mais ainda o seu e
 Suponhamos que exista aquela tão famosa classe `Pessoa`:
 
 {% highlight js %}
-class Pessoa{
-	
-	constructor(nome,idade){
-		this._nome = nome;
-		this._idade = idade;
-	}
+class Pessoa{	
+   constructor(nome,idade){
+      this._nome = nome;
+      this._idade = idade;
+   }
 
-	get nome(){
-		return this._nome;
-	}
+   get nome(){
+      return this._nome;
+   }
 
-	get idade(){
-		return this._idade;
-	}
-	
+   get idade(){
+      return this._idade;
+   }	
 }
 {% endhighlight %}
 
@@ -65,10 +63,10 @@ Para criarmos usaremos a seguinte sintaxe para criar esse **mentiroso**:
 
 {% highlight js %}
 let meFalse = new Proxy(me, {
-	get(target, prop, receiver){
-		if (prop == 'nome') return `João`;
-		if (prop == 'idade') return 23;
-	}
+   get(target, prop, receiver){
+      if (prop == 'nome') return `João`;
+      if (prop == 'idade') return 23;
+   }
 });
 {% endhighlight %}
 
@@ -84,8 +82,9 @@ Agora não tem mais segredo, estou apenas verificando se a propriedade é nome, 
 .
 .
 .
-	get(target, prop, receiver){
-		if (prop == 'nome') return `${target[prop]} Napoleão`;
+   get(target, prop, receiver){
+      if (prop == 'nome') return `${target[prop]} Napoleão`;
+   }
 .
 .
 {% endhighlight %}
