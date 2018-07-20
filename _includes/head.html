@@ -17,29 +17,31 @@
   {% if page.title == "Home" %}
   <meta property="og:title" content="Gabriel Napoleão ⚡ Front End Developer">
   <meta property="og:description" content="Olá, sou Gabriel Napoleão, um desenvolvedor front end que mora no Brasil. Gosto de aprender e disseminar conhecimento.">
-  <meta property="og:url" content="https://gabrielndr.github.io/">
+  <meta property="og:url" content="{{ site.url }}">
   <meta property="og:site_name" content="Gabriel Napoleão ⚡ Front End Developer">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:description" content="Olá, sou Gabriel Napoleão, um desenvolvedor front end que mora no Brasil. Gosto de aprender e disseminar conhecimento.">
   <meta name="twitter:title" content="Gabriel Napoleão ⚡ Front End Developer">
+  <meta property="og:image" content="https://gabrielndr.github.io/public/i.png">
   {% elsif page.layout == "post" %}
   <meta property="og:title" content="{{ page.title }} ⚡ Gabriel Napoleão"">
   <meta property="og:description" content="{{ page.content | strip_html | truncatewords: 50}}">
-  <meta property="og:url" content="{{ site.url }}{{ post.url }}">
-  <meta property="og:site_name" content="{{ page.title }} ⚡ Gabriel Napoleão">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="Gabriel Napoleão ⚡ Front End Developer">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords: 50}}">
   <meta name="twitter:title" content="{{ page.title }} ⚡ Gabriel Napoleão">
+  <meta property="og:image" content="https://gabrielndr.github.io/public/i_wide.png">
   {% else %}
   <meta property="og:title" content="{{ page.title }} ⚡ Gabriel Napoleão"">
   <meta property="og:description" content="{{ page.content | strip_html | truncatewords: 50}}">
-  <meta property="og:url" content="https://gabrielndr.github.io{{ page.url }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:site_name" content="{{ page.title }} ⚡ Gabriel Napoleão">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords: 50}}">
   <meta name="twitter:title" content="{{ page.title }} ⚡ Gabriel Napoleão">
-  {% endif %}
   <meta property="og:image" content="https://gabrielndr.github.io/public/i.png">
+  {% endif %}
   <meta name="keywords" content="HTML,CSS,JavaScript,ECMAScript,FrontEnd">
   <meta name="author" content="Gabriel Napoleão">
   <meta name="robots" content="index, follow">
