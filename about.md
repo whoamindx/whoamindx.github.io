@@ -10,8 +10,8 @@ Desenvolvedor Front End, ama JavaScript e vive uma vida open source. Me graduand
 * CSS (SASS)
 * Responsive - Mobile First
 * Css Frameworks (Bootstrap, Materialize)
-* JavaScript (Vanilla JS, jQuery, AngularJS)
-* NodeJS - NPM
+* JavaScript (Vanilla JS, jQuery, AngularJS, React, Vue)
+* NodeJS - NPM - Yarn
 * Gulp
 * Git
 * PHP
