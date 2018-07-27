@@ -7,7 +7,7 @@ permalink:           /:year/:title
 # Setup
 title:               Gabriel
 tagline:             ''
-description:         'Olá, seja bem vindo ao meu blog, me chamo Gabriel Napoleão, sou fascinado por desenvolvimento web focado em front end. Estou me graduando em Sistemas de Informação na UniFanor Wyden e resido em Fortaleza.' #'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:         'Olá, me chamo Gabriel Napoleão. Sou um Front End Developer residente em Fortaleza e um entusiasta Open Source. Ficarei muito feliz em você poder dá uma olhada nos meus posts e desse um feedback pelos comentários.' #'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 http://gabrielndr.github.io
 baseurl:             ''
 paginate:            5
