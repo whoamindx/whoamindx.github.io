@@ -3,11 +3,11 @@ layout: post
 title: Fazemos parte da profissão mais maluca
 ---
 
-Já parou para pensar que fazemos parte da profissão que mudou completamente a forma que vivemos hoje? E o melhor disso é que somos autônomos o suficiente para que não se fizesse necessário um organização superior a nós que precise ditar as o que ou não podemos fazer.
+Já parou para pensar que fazemos parte da profissão que mudou completamente a forma que vivemos hoje? E o melhor disso é que somos autônomos o suficiente para que não se fizesse necessário um organização superior a nós que precise ditar o que ou não podemos fazer.
 
 Estava voltando para casa em uma carona com um amigo e esse meu amigo trabalha tanto com design como com desenvolvimento de sites e comecei a pensar: Ele não precisa dar satisfação para nenhuma entidade que toma de conta do trabalho dele.
 
-Diferente de um médico que tem toda a regulamentação, um advogado que sempre precisa está com a OAB em dias, nós não precisamos de nada disso  e somos literalmente os magos da atualidade.
+Diferente de um médico que tem toda a regulamentação, um advogado que sempre precisa está com a OAB em dias, nós não precisamos de nada disso e somos literalmente os magos da atualidade.
 
 Não escrevi esse post com o intuito de menosprezar nenhuma profissão, nem menos mostrar que o nosso trabalho é superior aos outros. Mas escrevi ele com o intuito de fazer você refletir que estamos todos em um barco e literalmente guiamos ele por conta própria.
 
@@ -29,7 +29,7 @@ Quer um exemplo bem legal? O WhatsApp, com certeza deve ser o App mais utilizado
 
 ## Nada haver o trecho a seguir mas preciso falar
 
-Eu acho que um dos requisitos para ser um bom dev é ter um nome exótico por que é cada dev que eu conheço que tem um nome diferentão, não é João, nem Felipe, ou Gabriel, não é nome comum e quando eu pergunto o nome já espero algo como: [Russian](https://github.com/russiann){:target="_blank"}, [Hiléo](https://github.com/hileomsi){:target="_blank"}, [Rogan](https://github.com/roganmelo){:target="_blank"}, [Pato](https://github.com/cjpatoilo){:target="_blank"} (chamamos ele de Pato mas na verdade ele tem Patoilo no nome), [Loy](https://github.com/loycharles){:target="_blank"}, [Bibiano](https://github.com/GabrielBibiano){:target="_blank"}, [Petrus](https://github.com/Petrusthecoder){:target="_blank"}, [Loureiro](https://github.com/callmeloureiro){:target="_blank"}, [Rasteli](https://github.com/kurostein){:target="_blank"}, [Jarelio](https://fb.com/jarelio){:target="_blank"} fora que tem a galera famosinha que eu não chego a ser amigo como o [Zeno](https://github.com/zenorocha){:target="_blank"}, [Suissa](https://github.com/suissa){:target:"_blank"}
+Eu acho que um dos requisitos para ser um bom dev é ter um nome exótico por que é cada dev que eu conheço que tem um nome diferentão, não é João, nem Felipe, ou Gabriel, não é nome comum e quando eu pergunto o nome já espero algo como: [Russian](https://github.com/russiann){:target="_blank"}, [Hiléo](https://github.com/hileomsi){:target="_blank"}, [Rogan](https://github.com/roganmelo){:target="_blank"}, [Pato](https://github.com/cjpatoilo){:target="_blank"} (chamamos ele de Pato mas na verdade ele tem Patoilo no nome), [Loy](https://github.com/loycharles){:target="_blank"}, [Bibiano](https://github.com/GabrielBibiano){:target="_blank"}, [Petrus](https://github.com/Petrusthecoder){:target="_blank"}, [Loureiro](https://github.com/callmeloureiro){:target="_blank"}, [Rasteli](https://github.com/kurostein){:target="_blank"}, [Jarelio](https://fb.com/jarelio){:target="_blank"}, [Livino](https://fb.com/jeanlivino){:target="_blank"}, [Maick](https://fb.com/MaickSilva){:target="_blank"} fora que tem a galera famosinha que eu não chego a ser amigo como o [Zeno](https://github.com/zenorocha){:target="_blank"}, [Suissa](https://github.com/suissa){:target:"_blank"}
 
 ## Universo Open Source
 
