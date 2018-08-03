@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Fazemos parte da profissão mais maluca
