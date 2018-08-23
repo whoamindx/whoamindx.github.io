@@ -9,7 +9,7 @@ Estava voltando para casa em uma carona com um amigo e esse meu amigo trabalha t
 
 Diferente de um médico que tem toda a regulamentação, um advogado que sempre precisa estar com a OAB em dias, nós não precisamos de nada disso e somos literalmente os magos da atualidade.
 
-Não escrevi esse post com o intuito de menosprezar nenhuma profissão, nem menos mostrar que o nosso trabalho é superior aos outros. Mas escrevi ele com o intuito de fazer você refletir que estamos todos em um barco e literalmente guiamos ele por conta própria.
+Não escrevi esse post com o intuito de menosprezar nenhuma profissão, nem mostrar que o nosso trabalho é superior aos outros. Mas escrevi ele com o intuito de fazer você refletir que estamos todos em um barco e literalmente guiamos ele por conta própria.
 
 Também não vim aqui querer dar uma de liberal capitalista e blah blah blah... Quero que entenda que mesmos não precisando de algum superior para nos dizer "use sempre function expression em detrimento de function declaration" ou nós obrigando a sempre usarmos "div.wrapper" ao invés de somente ".wrapper" em nossa folha de estilo.
 
