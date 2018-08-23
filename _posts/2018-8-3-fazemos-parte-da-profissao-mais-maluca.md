@@ -11,7 +11,7 @@ Diferente de um médico que tem toda a regulamentação, um advogado que sempre 
 
 Não escrevi esse post com o intuito de menosprezar nenhuma profissão, nem mostrar que o nosso trabalho é superior aos outros. Mas escrevi ele com o intuito de fazer você refletir que estamos todos em um barco e literalmente guiamos ele por conta própria.
 
-Também não vim aqui querer dar uma de liberal capitalista e blah blah blah... Quero que entenda que mesmos não precisando de algum superior para nos dizer "use sempre function expression em detrimento de function declaration" ou nós obrigando a sempre usarmos "div.wrapper" ao invés de somente ".wrapper" em nossa folha de estilo.
+Também não vim aqui querer dar uma de liberal capitalista e blah blah blah... Quero que entenda que mesmos não precisando de algum superior para nos dizer "use sempre function expression em detrimento de function declaration" ou nos obrigando a sempre usarmos "div.wrapper" ao invés de somente ".wrapper" em nossa folha de estilo.
 
 ## Certo Napoleão, então é sempre bom vivermos em caos e deixar cada um fazer do jeito que sempre achar melhor?
 
