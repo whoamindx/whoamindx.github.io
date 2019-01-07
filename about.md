@@ -3,7 +3,7 @@ layout: page
 title: Sobre mim
 ---
 
-Desenvolvedor Front End, ama JavaScript e vive uma vida open source. Me graduando em Sistemas de Informação na UniFanor Wyden, moro em Fortaleza e atuamente palestrante da comunidade WordPress Fortaleza.
+Desenvolvedor Front End, ama JavaScript e vive uma vida open source. Nas horas vagas fica no console do Chrome testando código, moro em São Caetano do Sul, SP e palestrante da comunidade WordPress Fortaleza e Frontend CE.
 
 ### Skills
 * HTML
