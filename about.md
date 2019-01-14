@@ -6,16 +6,16 @@ title: Sobre mim
 Desenvolvedor Front End, ama JavaScript e vive uma vida open source. Nas horas vagas fica no console do Chrome testando código, moro em São Caetano do Sul, SP e palestrante da comunidade WordPress Fortaleza e Frontend CE.
 
 ### Skills
-* HTML
-* CSS (SASS, Stylus)
+* HTML5
+* CSS3 (SASS, Stylus)
 * Responsive - Mobile First
 * Css Frameworks (Bootstrap, Materialize)
-* JavaScript (Vanilla JS, jQuery, AngularJS, React, Vue)
-* NodeJS - NPM - Yarn
+* JavaScript (Vanilla JS, jQuery, AngularJS, Angular, React, Vue.js)
+* Node.js - NPM - Yarn
 * Gulp - webpack
-* Git
+* Git - Git Flow
 * PHP
-* WordPress
+* WordPress (desenvolvimento de temas)
 * Agile - Scrum - Kanban - Pair Programming - XP
 
 <!-- <p class="message">
