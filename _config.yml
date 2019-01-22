@@ -14,14 +14,14 @@ paginate:            5
 
 # contacts
 contacts:
-  facebook: https://facebook.com/gabrielndr99
-  instagram: https://www.instagram.com/gabrielndr/
-  github: https://github.com/gabrielndr
-  email: gabriel.ndr.sky@gmail.com
-  twitter: https://twitter.com/gabrielndr99
-  linkedin: https://www.linkedin.com/in/gabrielndr/
+  facebook: https://facebook.com/whoamindx
+  instagram: https://www.instagram.com/whoamindx/
+  github: https://github.com/whoamindx
+  email: whoamindx@gmail.com
+  twitter: https://twitter.com/whoamindx
+  linkedin: https://www.linkedin.com/in/whoamindx/
   # googleplus:
-  spotify: https://open.spotify.com/user/gabriel_ndr
+  spotify: https://open.spotify.com/user/whoamindx
 
 # Custom vars
 version:             1.0.0
