@@ -14,15 +14,15 @@ Isso é o que o nosso querido pai Google nos diz. É básicamente a ação de vo
 
 {% highlight js %}
 // Array com o nome de pessoas.
-let persons = [
-  "Gabriel",
-  "Eduardo",
-  "Davi"
-];
+const persons = [
+  'Gabriel',
+  'Eduardo',
+  'Davi'
+]
 
 // Exibindo o nome de todas as pessoas que exista no array
-for (var i = 0; i < persons.length; i++){
-   console.log(persons[i]);
+for (var i = 0; i < persons.length; i++) {
+  console.log(persons[i])
 }
 {% endhighlight %}
 
@@ -32,19 +32,19 @@ Neste post irei apresentar à vocês 6 métodos da API de Array existente em Jav
 
 ## ForEach
 
-Este faz o mesmo que o codigo anterior, porém escrita em menos código e mais fácil de se entender, veja:
+Este faz o mesmo que o codigo anterior, porém escrita em menos código, mais fácil de entender e usando da programação funcional, veja:
 
 {% highlight js %}
-let persons = [
-  "Gabriel",
-  "Eduardo",
-  "Davi"
+const persons = [
+  'Gabriel',
+  'Eduardo',
+  'Davi'
 ];
 
-/* Exibindo o nome de todas as pessoas que exista
-no array utilizando o forEach */
-persons.forEach(function(person){
-  console.log(person);
+/* Exibindo o nome de todas as pessoas que
+   exista no array utilizando o forEach */
+persons.forEach(function(person) {
+  console.log(person)
 })
 {% endhighlight %}
 
@@ -54,14 +54,14 @@ Então, o que está sendo feito no código acima? De maneira bem simples para qu
 
 ## Filter
 
-Este método filtra o array (o nome já diz né), mas pense o seguinte, imagine que você tenha um array com nome de usuários e cada usuário pode ser maior de idade ou não, e você queira somente os usuários que sejam maiores de idade? Nem pense em abrir uns `if` e armazenar cada usuário em uma nova variável como algo do tipo:
+Este método filtra o array (o nome já diz né), mas pense o seguinte: imagine que você tenha um array com nome de usuários e cada usuário pode ser maior de idade ou não, e você queira somente os usuários que sejam maiores de idade? Nem pense em abrir uns `if` e armazenar cada usuário em uma nova variável como algo do tipo:
 
 {% highlight js %}
-let users = [
-  {name: "Gabriel", isAdult: true},
-  {name: "Eduardo", isAdult: true},
-  {name: "João", isAdult: false}
-];
+const users = [
+  { name: 'Gabriel', isAdult: true },
+  { name: 'Eduardo', isAdult: true },
+  { name: 'João', isAdult: false }
+]
 
 let adultUsers = [];
 
@@ -75,72 +75,72 @@ users.forEach(function(user){
 Com o filter ficaria:
 
 {% highlight js %}
-let users = [
-  {name: "Gabriel", isAdult: true},
-  {name: "Eduardo", isAdult: true},
-  {name: "João", isAdult: false}
-];
+const users = [
+  { name: 'Gabriel', isAdult: true },
+  { name: 'Eduardo', isAdult: true },
+  { name: 'João', isAdult: false }
+]
 
 // Olha só que diferença
-users = users.filter(function(user){
-  return user.isAdult;
-});
+const adultUsers = users.filter(function(user) {
+  return user.isAdult
+})
 {% endhighlight %}
 
 Em 3 linhas de código você acabou de fazer o que em 5 linhas o código anterior fazia. Isso é bem bacana não é? Nem precisou de um `if` dentro, repare que os métodos Array abstraem muito.
+
+Basicamente para cada loop você precisa retorna `true` ou `false`. Se `true` ele retorna o objeto, caso ao contrário (`false`) ele não retorna o objeto. Baseado nisso você monta a sua lógica para fazer com que ele seja retornado, ou não, dada a alguma condição.
 
 ## Every
 
 Este método verifica se **todos** os elementos do array satisfazem a algum teste, se sim ele retorna `true`, se não `false`. Tomando como exemplo anterior o Array de usuários, se quisermos saber se todos os usuários são adultos, como ficaria do jeito tradicional e com o método `every`:
 
 {% highlight js %}
-let users = [
-  {name: "Gabriel", isAdult: true},
-  {name: "Eduardo", isAdult: true},
-  {name: "João", isAdult: false}
-];
+const users = [
+  { name: 'Gabriel', isAdult: true },
+  { name: 'Eduardo', isAdult: true },
+  { name: 'João', isAdult: false }
+]
 
 /* Esta variável será booleana, inicialmente true e dependendo
 da condição irá receber false se algum usuário não for de
 maior */
-let allAdult = true;
+let allAdult = true
 
 // Forma antiga
-for (var i = 0; i < users.length; i++){
-  if(!users[i].isAdult){
-    allAdult = false;
+for (var i = 0; i < users.length; i++) {
+  if(!users[i].isAdult) {
+    allAdult = false
   }
 }
 
 // Com o every
-allAdult = users.every(function(user){
-  return user.isAdult;
+allAdult = users.every(function(user) {
+  return user.isAdult
 });
 
 {% endhighlight %}
 
-Muito mais fácil de se compreender não é?
+Muito mais fácil de se compreender, não é?
 
 ## Some
 
 Este faz o inverso do `every`, ao invés de retornar true se todos os elementos satisfizerem ao teste, no `some` ele retorna `true` se **pelo menos um** satisfizer.
 
 {% highlight js %}
-let users = [
-  {name: "Gabriel", isAdult: true},
-  {name: "Eduardo", isAdult: true},
-  {name: "João", isAdult: false}
-];
-
-let someAdult;
+const users = [
+  { name: 'Gabriel', isAdult: true },
+  { name: 'Eduardo', isAdult: true },
+  { name: 'João', isAdult: false }
+]
 
 /* Queremos saber se existe pelo menos um
 usuário que seja menor de idade */
-someAdult = users.some(function(user){
-  return !user.isAdult;
+const someNotAdult = users.some(function(user) {
+  return !user.isAdult
 });
 
-// someAdult receberá um false
+// someAdult receberá um true
 
 {% endhighlight %}
 
@@ -149,22 +149,25 @@ someAdult = users.some(function(user){
 Com este método você pode modificar valores do array gerando um array resultante com os valores modificados e não modificados. Por exemplo: você possui um array com vários produtos, cada produto tem seu preço e você quer retornar o preço com desconto de 10% para aquele produto.
 
 {% highlight js %}
-let products = [
-  {name: "Café", price: 3.00},
-  {name: "Leite", price: 4.00},
-  {name: "Suco", price: 2.50}
-];
+const products = [
+  { name: 'Café', price: 3.00 },
+  { name: 'Leite', price: 4.00 },
+  { name: 'Suco', price: 2.50 }
+]
 
 // Produtos com seus descontos
-let newProducts;
-
-newProducts = products.map(function(product){
-  product.price = product.price - (product.price*0.10);
+const productsWithDiscounts = products.map(function(product) {
+  product.price = product.price - (product.price * 0.10)
   return product
 });
 
 /* newProducts agora é uma copia do array products
-porém com o preço de desconto */
+porém com o preço de desconto:
+[
+  { name: 'Café', price: 2.7 },
+  { name: 'Leite', price: 3.6 },
+  { name: 'Suco', price: 2.25 }
+] */
 {% endhighlight %}
 
 Sem muita complexidade, sem muita dificuldade e o melhor, em poucas linhas de código.
@@ -175,23 +178,20 @@ Com o reduce você pode percorrer o array e gerar um valor resultante baseado no
 
 {% highlight js %}
 // Suponha que você já possua o array com seus descontos
-let products = [
-  {name: "Café", price: 2.70},
-  {name: "Leite", price: 3.60},
-  {name: "Suco", price: 2.25}
-];
-
-// Valor total
-let total;
+const products = [
+  { name: 'Café', price: 2.70 },
+  { name: 'Leite', price: 3.60 },
+  { name: 'Suco', price: 2.25 }
+]
 
 // Agora vamos fazer o total dos produtos
-total = products.reduce(function(valorAtual, produto){
-  return valorAtual + produto.price;
-},0)
+const total = products.reduce(function(acumulador, produto) {
+  return acumulador + produto.price
+}, 0)
 {% endhighlight %}
 
-Calma calma, não se assuste. O `Reduce` recebe **dois** argumentos, um callback que também recebe **dois** argumentos (o primeiro é o acumulador e o segundo é o elemento do array) e o segundo é o valor inicial do acumulador, que no caso inicializamos ele com 0 (zero).
+Calma calma, não se assuste. O `Reduce` recebe **dois** argumentos, um callback que nesse caso também recebe **dois** argumentos (mas ele pode receber até 4: `acumulador`, `valorAtual`, `indice` e `array` - O array ao qual a função reduce() foi chamada), o primeiro é o acumulador e o segundo é o elemento do array que está sendo percorrido. E o segundo argumento do `reduce` é o valor inicial do acumulador, que no caso inicializamos ele com 0 (zero).
 
-Não se prenda ao for ou só ao forEach, a API de Array do JavaScript é muito vasta. Lógico que você pode resolver os problemas utilizando somente o `for`, mas dependendo da complexidade do problema usar somente o for não é a melhor opção, levando em consideração a legibilidade do código que fica de difícil compreensão e o pior, perceptivelmente maior. Quanto menos código escrito mais simples e fácil de compreender ele fica.
+Não se prenda ao for ou só ao forEach, a API de Array do JavaScript é muito vasta. Lógico que você pode resolver os problemas utilizando somente o `for`, mas dependendo da complexidade do problema usar somente o for não é a melhor opção, levando em consideração a legibilidade do código que fica de difícil compreensão e o pior, perceptivelmente maior. Quanto menos código escrito mais simples e fácil de compreender ele fica (obviamente, entendendo a semântica a API).
 
 É isso, obrigado por ler até o fim e até o próximo post 😁
