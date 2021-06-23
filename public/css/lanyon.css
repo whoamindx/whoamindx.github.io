@@ -606,7 +606,7 @@ a.pagination-item:hover {
             transform: skew(-20deg, -20deg) rotate(-45deg);
   }
   .triangle-content {
-        background: url(../i.jpg) no-repeat;
+      background: url(../i.jpg) no-repeat;
       background-position: 60px 0px;
       background-size: cover;
       position: relative;
