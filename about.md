@@ -3,7 +3,7 @@ layout: page
 title: Sobre mim
 ---
 
-Desenvolvedor Frontennd, ama JavaScript e vive uma vida open source. Nas horas vagas fica no console do Chrome testando código, mora em São Paulo, cearense e palestrante da comunidade WordPress Fortaleza e Frontend CE.
+Desenvolvedor Frontend, ama JavaScript e vive uma vida open source. Nas horas vagas fica no console do Chrome testando código, mora em São Paulo, cearense e palestrante da comunidade WordPress Fortaleza e Frontend CE.
 
 ### Skills
 * HTML5
