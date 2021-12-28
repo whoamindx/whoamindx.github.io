@@ -192,6 +192,6 @@ const total = products.reduce(function(acumulador, produto) {
 
 Calma calma, não se assuste. O `Reduce` recebe **dois** argumentos, um callback que nesse caso também recebe **dois** argumentos (mas ele pode receber até 4: `acumulador`, `valorAtual`, `indice` e `array` - O array ao qual a função reduce() foi chamada), o primeiro é o acumulador e o segundo é o elemento do array que está sendo percorrido. E o segundo argumento do `reduce` é o valor inicial do acumulador, que no caso inicializamos ele com 0 (zero).
 
-Não se prenda ao for ou só ao forEach, a API de Array do JavaScript é muito vasta. Lógico que você pode resolver os problemas utilizando somente o `for`, mas dependendo da complexidade do problema usar somente o for não é a melhor opção, levando em consideração a legibilidade do código que fica de difícil compreensão e o pior, perceptivelmente maior. Quanto menos código escrito mais simples e fácil de compreender ele fica (obviamente, entendendo a semântica a API).
+Não se prenda ao for ou só ao forEach, a API de Array do JavaScript é muito vasta. Lógico que você pode resolver os problemas utilizando somente o `for`, mas dependendo da complexidade do problema usar somente o for não é a melhor opção, levando em consideração a legibilidade do código que fica de difícil compreensão e o pior, perceptivelmente maior. Quanto menos código escrito mais simples e fácil de compreender ele fica (obviamente, entendendo a semântica da API).
 
 É isso, obrigado por ler até o fim e até o próximo post 😁
