@@ -576,6 +576,14 @@ a.pagination-item:hover {
       color: #4c8ec7;
       transition: .5s;
     }
+  #i-virtual {
+    max-width: 460px;
+    height: 300px;
+    margin: 20px auto;
+    background-image: url(../i_virtual.gif);
+    background-position: top center;
+    background-size: 135%;
+  }
   .triangle-wrap {
       width: 400px;
       height: 400px;
@@ -622,6 +630,12 @@ a.pagination-item:hover {
     max-width: 320px;
   }
 
+@media screen and (max-width: 607px){
+  #i-virtual {
+    max-width: 280px;
+    height: 180px;
+  }
+}
 @media screen and (max-width: 431px){
   .triangle-wrap{
     width: 280px;
