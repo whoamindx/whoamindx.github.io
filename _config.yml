@@ -14,11 +14,11 @@ paginate:            5
 
 # contacts
 contacts:
-  facebook: https://facebook.com/whoamindx
-  instagram: https://www.instagram.com/whoamindx/
+  # facebook: https://facebook.com/whoamindx
+  # instagram: https://www.instagram.com/whoamindx/
   github: https://github.com/whoamindx
   email: whoamindx@gmail.com
-  twitter: https://twitter.com/whoamindx
+  # twitter: https://twitter.com/whoamindx
   linkedin: https://www.linkedin.com/in/whoamindx/
   # googleplus:
   spotify: https://open.spotify.com/user/31lsn5ksifn3ibyyjn6odlmbv46y
