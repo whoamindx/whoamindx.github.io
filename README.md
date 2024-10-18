@@ -3,3 +3,5 @@
 
 ## Why I chose Astro instead React or Next?
 Page loading performance, smaller bundle size and content-driven.
+
+![PageSpeed Insights Score](/score.gif)
