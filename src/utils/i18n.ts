@@ -25,8 +25,8 @@ export const skillsEN = [
 
 export const skillsPT = [
 	'HTML: SEO, HTML Semântico, Templates Engines (Pug);',
-	'CSS: CSS-in-JS (Emotion and Styled Components), Pré-processadores (SASS, Stylus) e Responsivo;',
-	'JavaScript: Vanilla JS, Frameworks (Angular, React, Vue) State Managers (Redux, Vuex and Zustand) SSR (Next.js, Nuxt.js), Mobile (Ionic, React Native) e TypeScript;',
+	'CSS: CSS-in-JS (Emotion, Styled Components), Pré-processadores (SASS, Stylus) e Responsivo;',
+	'JavaScript: Vanilla JS, Frameworks (Angular, React, Vue) State Managers (Redux, Vuex e Zustand) SSR (Next.js, Nuxt.js), Mobile (Ionic, React Native) e TypeScript;',
 	'Node.js: NPM e Yarn;',
 	'Tools: Gulp e webpack;',
 	'Testes Unitários: Jest, Jasmine, Karma, Testing Library;',
@@ -45,7 +45,7 @@ export const talksEN = [
 		event: 'FrontEnd CE',
 		localization: 'Fortaleza, CE',
 		url: '/talks/astro.pdf',
-		textButton: 'See slide'
+		textButton: 'See slides'
 	},
 	{
 		title: 'Angular X React X Vue, which is better? (pt-BR)',
@@ -53,7 +53,7 @@ export const talksEN = [
 		event: 'FrontEnd CE',
 		localization: 'Fortaleza, CE',
 		url: '/talks/angularXreactXvue.pdf',
-		textButton: 'See slide'
+		textButton: 'See slides'
 	},
 	{
 		title: 'ECMAScript I18N API',
@@ -69,7 +69,7 @@ export const talksEN = [
 		event: 'Via Varejo',
 		localization: 'São Paulo, SP',
 		url: '/talks/pwa.pdf',
-		textButton: 'See slide'
+		textButton: 'See slides'
 	},
 	{
 		title: 'Accessibility (pt-BR)',
@@ -77,7 +77,7 @@ export const talksEN = [
 		event: 'FrontEnd CE',
 		localization: 'Fortaleza, CE',
 		url: '/talks/acessibilidade.pdf',
-		textButton: 'See slide'
+		textButton: 'See slides'
 	},
 	{
 		title: 'Git (pt-BR)',
@@ -85,7 +85,7 @@ export const talksEN = [
 		event: 'Hangouts',
 		localization: 'Online',
 		url: '/talks/git.pdf',
-		textButton: 'See slide'
+		textButton: 'See slides'
 	},
 	{
 		title: 'Service Workers (pt-BR)',
@@ -93,7 +93,7 @@ export const talksEN = [
 		event: 'Pachy Dev\'s Elephant Coworking',
 		localization: 'Fortaleza, CE',
 		url: '/talks/service_workers.pdf',
-		textButton: 'See slide'
+		textButton: 'See slides'
 	},
 	{
 		title: 'Page load performance (pt-BR)',
@@ -104,7 +104,7 @@ export const talksEN = [
 	{
 		title: 'WordPress (pt-BR)',
 		year: 2018,
-		event: 'WP Fortaleza',
+		event: 'WordPress Fortaleza',
 		localization: 'Fortaleza, CE'
 	}
 ]
@@ -116,7 +116,7 @@ export const talksPT = [
 		event: 'FrontEnd CE',
 		localization: 'Fortaleza, CE',
 		url: '/talks/astro.pdf',
-		textButton: 'See slide'
+		textButton: 'Ver slides'
 	},
 	{
 		title: 'Angular X React X Vue, qual o melhor? (pt-BR)',
@@ -124,7 +124,7 @@ export const talksPT = [
 		event: 'FrontEnd CE',
 		localization: 'Fortaleza, CE',
 		url: '/talks/angularXreactXvue.pdf',
-		textButton: 'See slide'
+		textButton: 'Ver slides'
 	},
 	{
 		title: 'ECMAScript I18N API',
@@ -132,7 +132,7 @@ export const talksPT = [
 		event: 'FrontEnd CE',
 		localization: 'YouTube',
 		url: '/talks/slide.pdf',
-		textButton: 'See video'
+		textButton: 'Ver vídeo'
 	},
 	{
 		title: 'PWA',
@@ -140,7 +140,7 @@ export const talksPT = [
 		event: 'Via Varejo',
 		localization: 'São Paulo, SP',
 		url: '/talks/pwa.pdf',
-		textButton: 'See slide'
+		textButton: 'Ver slides'
 	},
 	{
 		title: 'Acessibilidade (pt-BR)',
@@ -148,7 +148,7 @@ export const talksPT = [
 		event: 'FrontEnd CE',
 		localization: 'Fortaleza, CE',
 		url: '/talks/acessibilidade.pdf',
-		textButton: 'See slide'
+		textButton: 'Ver slides'
 	},
 	{
 		title: 'Git (pt-BR)',
@@ -156,7 +156,7 @@ export const talksPT = [
 		event: 'Hangouts',
 		localization: 'Online',
 		url: '/talks/git.pdf',
-		textButton: 'See slide'
+		textButton: 'Ver slides'
 	},
 	{
 		title: 'Service Workers (pt-BR)',
@@ -164,7 +164,7 @@ export const talksPT = [
 		event: 'Pachy Dev\'s Elephant Coworking',
 		localization: 'Fortaleza, CE',
 		url: '/talks/service_workers.pdf',
-		textButton: 'See slide'
+		textButton: 'Ver slides'
 	},
 	{
 		title: 'Desempenho de carregamento de página (pt-BR)',
@@ -175,7 +175,7 @@ export const talksPT = [
 	{
 		title: 'WordPress (pt-BR)',
 		year: 2018,
-		event: 'WP Fortaleza',
+		event: 'WordPress Fortaleza',
 		localization: 'Fortaleza, CE'
 	}
 ]
