@@ -10,6 +10,24 @@ const { title, lang } = Astro.props;
 <!doctype html>
 <html lang={lang}>
 	<head>
+		<!-- Google tag (gtag.js) -->
+		<script is:inline src="https://www.googletagmanager.com/gtag/js?id=G-7P2YRPSRK1"></script>
+		<script>
+			declare global {
+				interface Window {
+					dataLayer: any[];
+					gtag: (...args: any[]) => void;
+				}
+			}
+			document.addEventListener("astro:page-load", () => {
+				window.dataLayer = window.dataLayer || [];
+				window.gtag = function gtag(...args: any[]) {
+					window.dataLayer.push(arguments);
+				};
+				window.gtag("js", new Date());
+				window.gtag("config", "G-7P2YRPSRK1");
+			});
+		</script>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
