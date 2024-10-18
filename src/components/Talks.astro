@@ -3,23 +3,24 @@ import { seeMore } from "@/utils/i18n"
 import SeeMore from "./SeeMore.astro"
 
 interface talk {
-	title: string,
-	year: number,
-	event: string,
-	localization: string,
-	url?: string,
-	textButton?: string
+	title: string;
+	year: number;
+	event: string;
+	localization: string;
+	url?: string;
+	textButton?: string;
 }
 
 interface Props {
-	talks: talk[],
-	textSeeMore: string
+	talks: talk[];
+	headingText: string;
+	textSeeMore: string;
 }
 
-const { talks, textSeeMore } = Astro.props
+const { talks, headingText, textSeeMore } = Astro.props
 ---
 
-<h2 class="text-gradient h2">Talks:</h2>
+<h2 class="text-gradient h2">{headingText}:</h2>
 <ul>
   {talks.map(({ title, year, event, localization, url, textButton }, i) => (
 		<li class:list={[{'hide': i>1}]}>

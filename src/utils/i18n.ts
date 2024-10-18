@@ -1,3 +1,13 @@
+export const headingsEN = {
+	skills: 'Skills',
+	talks: 'Talks'
+}
+
+export const headingsPT = {
+	skills: 'Habilidades',
+	talks: 'Palestras'
+}
+
 export const seeMore = {
 	en: 'See more',
 	pt: 'Ver mais'
