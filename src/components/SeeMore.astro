@@ -1,5 +1,13 @@
+---
+interface Props {
+	text: string;
+}
+
+const { text } = Astro.props;
+---
+
 <div class="overlay">
-	<button see-more="true">See more</button>
+	<button see-more="true">{text}</button>
 </div>
 <style>
   .overlay {

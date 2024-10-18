@@ -6,7 +6,7 @@ import ProfilePhoto from '@/components/ProfilePhoto.astro';
 import SocialNetworks from '@/components/SocialNetworks.astro';
 import SelectLanguage from '@/components/SelectLanguage.astro';
 
-import { langsPT, talksPT, skillsPT } from '@/utils/i18n';
+import { seeMore, langsPT, talksPT, skillsPT } from '@/utils/i18n';
 ---
 
 <Layout title="Gabriel Napolião - Software Developer">
@@ -19,8 +19,8 @@ import { langsPT, talksPT, skillsPT } from '@/utils/i18n';
 		<p class="welcome">
 			Olá, sou um Engenheiro de Software Sênior na Solutis e palestrante na comunidade Frontend CE. Atualmente tenho 25 anos e comecei a estudar programação aos 14. Durante minha carreira trabalhei com Angular, Ionic, Vue, React e React Native. Também trabalhei para Via Varejo com foco em e-commerce e no Itaú desenvolvendo sistemas de financiamento de automóveis.
 		</p>
-		<Skills skills={skillsPT}/>
-		<Talks talks={talksPT} />
+		<Skills skills={skillsPT} textSeeMore={seeMore.pt} />
+		<Talks talks={talksPT} textSeeMore={seeMore.pt} />
 	</main>
 </Layout>
 

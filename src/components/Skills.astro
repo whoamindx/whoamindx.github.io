@@ -2,17 +2,18 @@
 import SeeMore from "./SeeMore.astro"
 
 interface Props {
-	skills: string[]
+	skills: string[],
+	textSeeMore: string
 }
 
-const { skills } = Astro.props
+const { skills, textSeeMore } = Astro.props
 ---
 
 <h2 class="text-gradient h2">Skills:</h2>
 <ul>
   {skills.map((skill, i) => <li class:list={[{ hide: i>2 }]}>{skill}</li>)}
 </ul>
-<SeeMore />
+<SeeMore text={textSeeMore} />
 <style>
 	ul {
 		margin-bottom: 3rem;

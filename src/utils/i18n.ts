@@ -1,3 +1,8 @@
+export const seeMore = {
+	en: 'See more',
+	pt: 'Ver mais'
+}
+
 export const langsEN = {
 	en: 'English',
 	pt: 'Portuguese'
