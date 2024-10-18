@@ -75,7 +75,7 @@ export const talksEN = [
 		year: 2021,
 		event: 'FrontEnd CE',
 		localization: 'YouTube',
-		url: '/talks/slide.pdf',
+		url: 'https://www.youtube.com/watch?v=Ey-r2ihP8RY&ab_channel=FrontEndCE',
 		textButton: 'See video'
 	},
 	{
@@ -146,7 +146,7 @@ export const talksPT = [
 		year: 2021,
 		event: 'FrontEnd CE',
 		localization: 'YouTube',
-		url: '/talks/slide.pdf',
+		url: 'https://www.youtube.com/watch?v=Ey-r2ihP8RY&ab_channel=FrontEndCE',
 		textButton: 'Ver vídeo'
 	},
 	{
