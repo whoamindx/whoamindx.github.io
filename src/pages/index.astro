@@ -7,9 +7,11 @@ import SocialNetworks from '@/components/SocialNetworks.astro';
 import SelectLanguage from '@/components/SelectLanguage.astro';
 
 import { headingsEN, seeMore, langsEN, talksEN , skillsEN } from '@/utils/i18n';
+
+const description = "Software Engineer focused on front-end development, Angular, Vue and React."
 ---
 
-<Layout title="Gabriel Napolião - Software Developer" lang="en">
+<Layout title="Gabriel Napolião - Software Developer" lang="en" description={description}>
 	<main>
 		<ProfilePhoto />
 		<h1>Gabriel <span class="text-gradient">Napolião</span></h1>

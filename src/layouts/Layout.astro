@@ -1,10 +1,12 @@
 ---
 interface Props {
+	description: string;
 	title: string;
 	lang: string;
 }
 
-const { title, lang } = Astro.props;
+const { description, title, lang } = Astro.props;
+const { site } = Astro;
 ---
 
 <!doctype html>
@@ -19,7 +21,7 @@ const { title, lang } = Astro.props;
 			gtag('config', 'G-7P2YRPSRK1');
 		</script>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="preload" as="image" imagesrcset="/fortal_city.webp">
 		<link rel="preload" as="image" imagesrcset="/me.webp">
@@ -32,6 +34,17 @@ const { title, lang } = Astro.props;
 		<meta name="msapplication-navbutton-color" content="#000">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<meta name="robots" content="index, follow">
+		<meta name="googlebot" content="index, follow">
+		<meta property="og:title" content="Gabriel Napolião - Software Developer">
+		<meta property="og:description" content={description}>
+		<meta property="og:url" content={`${site}${lang == 'en' ? '' : 'pt'}`}>
+		<meta property="og:site_name" content="Gabriel Napolião - Software Developer">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:description" content={description}>
+		<meta name="twitter:title" content="Gabriel Napolião - Software Developer">
+		<meta property="og:image" content={`${site}me.webp`}>
+		<meta property="og:type" content="website">
 	</head>
 	<body>
 		<slot />
