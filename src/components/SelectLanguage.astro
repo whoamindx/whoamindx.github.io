@@ -1,0 +1,34 @@
+---
+interface langs {
+  en: string,
+  pt: string
+}
+
+interface Props {
+  langs: langs;
+}
+
+const { langs } = Astro.props
+---
+
+<div>
+  <a href="/">{langs.en}</a>
+  <a href="/pt">{langs.pt}</a>
+</div>
+<style>
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+  a {
+    color: white;
+  }
+  a:nth-child(2) {
+    border-left: 1px solid white;
+    padding-left: 1rem;
+  }
+</style>

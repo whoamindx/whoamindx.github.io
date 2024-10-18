@@ -1,0 +1,55 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Talks from '@/components/Talks.astro';
+import Skills from '@/components/Skills.astro';
+import ProfilePhoto from '@/components/ProfilePhoto.astro';
+import SocialNetworks from '@/components/SocialNetworks.astro';
+import SelectLanguage from '@/components/SelectLanguage.astro';
+
+import { langsEN, talksEN , skillsEN } from '@/utils/i18n';
+---
+
+<Layout title="Gabriel Napolião - Software Developer">
+	<main>
+		<ProfilePhoto />
+		<h1>Gabriel <span class="text-gradient">Napolião</span></h1>
+		<h2><span class="text-gradient">Front-End Engineer</span> and Speaker</h2>
+		<SelectLanguage langs={langsEN} />
+		<SocialNetworks />
+		<p class="welcome">
+			Hi, I'm a Senior Software Engineer at Solutis and Speaker at Frontend CE Community. I'm currently 25 years old, and I started studying programming at 14. During my career I've worked with Angular, Ionic, Vue, React and React Native. I also worked at Via Varejo focusing on e-commerce and at Itaú developing car financing systems.
+		</p>
+		<Skills skills={skillsEN} />
+		<Talks talks={talksEN} />
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 600px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1, h2 {
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin: 0;
+	}
+	h1 {
+		font-size: 2rem;
+		margin-top: 2rem;
+	}
+	h2 {
+		font-size: 1rem;
+	}
+	.welcome {
+		margin: 0;
+		padding: 1.5rem;
+		font-size: 1rem;
+	}
+</style>

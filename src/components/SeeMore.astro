@@ -1,0 +1,26 @@
+<div class="overlay">
+	<button see-more="true">See more</button>
+</div>
+<style>
+  .overlay {
+		background: linear-gradient(0deg, #000, transparent);
+		width: 100%;
+		position: relative;
+		margin: -8rem 0 2rem;
+		height: 8rem;
+		display: flex;
+		justify-content: center;
+		align-items: end;
+	}
+</style>
+<script>
+  const buttons = document.querySelectorAll("[see-more]");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      button.parentElement?.previousElementSibling?.querySelectorAll(".hide").forEach((el) => {
+        el.classList.remove("hide");
+      }),
+      button.parentElement?.remove();
+    });
+  });
+  </script>

@@ -1,0 +1,75 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="preload" as="image" imagesrcset="/fortal_city.webp">
+		<link rel="preload" as="image" imagesrcset="/me.webp">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<meta name="theme-color" content="#000">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+		<meta name="msapplication-navbutton-color" content="#000">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 0, 142, 255;
+		--accent-light: 0, 226, 255;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #000 url(/fortal_city.webp) no-repeat top center;
+    background-size: auto 26rem;
+		@media screen and (max-width: 427px) {
+			background-size: auto 19rem;
+		}
+	}
+	button {
+		background: black;
+    color: white;
+    border: 1px solid rgb(var(--accent));
+    border-radius: .225rem;
+    padding: 0.5rem 1rem;
+    font-size: .875rem;
+    cursor: pointer;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.h2 {
+		margin: 1rem 1rem 0;
+    line-height: 1;
+		color: rgb(var(--accent));
+		font-size: 1.5rem;
+	}
+	.hide {
+		display: none;
+	}
+</style>

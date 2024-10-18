@@ -1,3 +1,5 @@
-# whoamindx.github.io
+# My WebSite using Astro 🚀
+[whoamindx.github.io](https://whoamindx.github.io/)
 
-My personal blog based in [Lanyon](https://github.com/poole/lanyon)
+## Why I chose Astro instead React?
+Performance load page, bundle size and content-driven.

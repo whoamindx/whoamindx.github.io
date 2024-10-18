@@ -1,0 +1,78 @@
+---
+import SeeMore from "./SeeMore.astro"
+
+interface talk {
+	title: string,
+	year: number,
+	event: string,
+	localization: string,
+	url?: string,
+	textButton?: string
+}
+
+interface Props {
+	talks: talk[]
+}
+
+const { talks } = Astro.props
+---
+
+<h2 class="text-gradient h2">Talks:</h2>
+<ul>
+  {talks.map(({ title, year, event, localization, url, textButton }, i) => (
+		<li class:list={[{'hide': i>1}]}>
+
+			<svg viewBox="0 0 100 100" width="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<polygon
+					fill="rgb(var(--accent))"
+					stroke="white"
+					stroke-width="2"
+					points="50 1 95 25 95 75 50 99 5 75 5 25"
+				/>
+			</svg>
+
+			<h3>{title}</h3>
+			<time>{year}</time>
+			<p>{event} - {localization}</p>
+			{url && (
+				<a href={url} target="_blank" class="text-gradient">
+					{textButton}
+				</a>
+			)}
+		</li>)
+	)}
+</ul>
+<SeeMore />
+<style>
+	ul {
+		list-style: none;
+		border-left: 1px solid white;
+    padding-left: 40px;
+    margin-left: 30px;
+		margin-bottom: 3rem;
+	}
+	li {
+		font-size: 1rem;
+		margin: 5px 0;
+		position: relative;
+	}
+	svg {
+		width: 2rem;
+    position: absolute;
+    top: -1px;
+    left: -56px;
+	}
+	h3 {
+		margin: 3rem 0 0 0;
+	}
+	time, p {
+		color: gray;
+	}
+	time {
+		font-size: .875rem;
+    font-weight: 100;
+	}
+	p {
+		margin: 0;
+	}
+</style>
