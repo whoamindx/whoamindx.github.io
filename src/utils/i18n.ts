@@ -114,13 +114,17 @@ export const talksEN = [
 		title: 'Page load performance (pt-BR)',
 		year: 2018,
 		event: 'FEBRACIS',
-		localization: 'Fortaleza, CE'
+		localization: 'Fortaleza, CE',
+		url: 'https://www.instagram.com/p/BjsCAfWBsxz',
+		textButton: 'See photo'
 	},
 	{
 		title: 'WordPress (pt-BR)',
 		year: 2018,
 		event: 'WordPress Fortaleza',
-		localization: 'Fortaleza, CE'
+		localization: 'Fortaleza, CE',
+		url: 'https://www.instagram.com/p/BjiOIXLhDD1',
+		textButton: 'See photo'
 	}
 ]
 
@@ -185,12 +189,16 @@ export const talksPT = [
 		title: 'Desempenho de carregamento de página (pt-BR)',
 		year: 2018,
 		event: 'FEBRACIS',
-		localization: 'Fortaleza, CE'
+		localization: 'Fortaleza, CE',
+		url: 'https://www.instagram.com/p/BjsCAfWBsxz',
+		textButton: 'Ver foto'
 	},
 	{
 		title: 'WordPress (pt-BR)',
 		year: 2018,
 		event: 'WordPress Fortaleza',
-		localization: 'Fortaleza, CE'
+		localization: 'Fortaleza, CE',
+		url: 'https://www.instagram.com/p/BjiOIXLhDD1',
+		textButton: 'Ver foto'
 	}
 ]
