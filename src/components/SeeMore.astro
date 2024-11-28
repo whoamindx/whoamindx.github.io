@@ -7,7 +7,7 @@ const { text } = Astro.props;
 ---
 
 <div class="overlay">
-	<button see-more="true">{text}</button>
+	<button data-see-more="true">{text}</button>
 </div>
 <style>
   .overlay {
@@ -22,7 +22,7 @@ const { text } = Astro.props;
 	}
 </style>
 <script>
-  const buttons = document.querySelectorAll("[see-more]");
+  const buttons = document.querySelectorAll("[data-see-more]");
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       button.parentElement?.previousElementSibling?.querySelectorAll(".hide").forEach((el) => {
