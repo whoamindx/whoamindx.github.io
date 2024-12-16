@@ -1,0 +1,57 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Talks from '@/components/Talks.astro';
+import Skills from '@/components/Skills.astro';
+import ProfilePhoto from '@/components/ProfilePhoto.astro';
+import SocialNetworks from '@/components/SocialNetworks.astro';
+import SelectLanguage from '@/components/SelectLanguage.astro';
+
+import { headingsES, seeMore, langsES, talksES, skillsES } from '@/utils/i18n';
+
+const description = "Ingeniero de software enfocado en desarrollo front-end, Angular, Vue y React."
+---
+
+<Layout title="Gabriel Napolião - Software Developer" lang="es" description={description}>
+	<main>
+		<ProfilePhoto />
+		<h1>Gabriel <span class="text-gradient">Napolião</span></h1>
+		<h2><span class="text-gradient">Ingeniero Front-End</span> y Conferencista</h2>
+		<SelectLanguage langs={langsES}/>
+		<SocialNetworks />
+		<p class="welcome">
+			Hola, soy Ingeniero de Software Sénior en Solutis y conferencista en la comunidad Frontend CE. Actualmente tengo 25 años y empecé a estudiar programación a los 14.<br><br>Durante mi carrera he trabajado con Angular, Ionic, Vue, React y React Native. También trabajé para Via Varejo con un enfoque en comercio electrónico y para Itaú desarrollando sistemas de financiamiento de automóviles y open finance.
+		</p>
+		<Skills skills={skillsES} textSeeMore={seeMore.es} headingText={headingsES.skills} />
+		<Talks talks={talksES} textSeeMore={seeMore.es} headingText={headingsES.talks} />
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 600px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1, h2 {
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin: 0;
+	}
+	h1 {
+		font-size: 2rem;
+		margin-top: 2rem;
+	}
+	h2 {
+		font-size: 1rem;
+	}
+	.welcome {
+		margin: 0;
+		padding: 1.5rem;
+		font-size: 1rem;
+	}
+</style>

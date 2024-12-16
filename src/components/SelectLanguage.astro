@@ -2,6 +2,7 @@
 interface langs {
   en: string;
   pt: string;
+  es: string;
 }
 
 interface Props {
@@ -14,6 +15,7 @@ const { langs } = Astro.props
 <div>
   <a href="/">{langs.en}</a>
   <a href="/pt">{langs.pt}</a>
+  <a href="/es">{langs.es}</a>
 </div>
 <style>
   div {
@@ -27,7 +29,7 @@ const { langs } = Astro.props
   a {
     color: white;
   }
-  a:nth-child(2) {
+  a:not(:first-child) {
     border-left: 1px solid white;
     padding-left: 1rem;
   }

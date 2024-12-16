@@ -8,19 +8,33 @@ export const headingsPT = {
 	talks: 'Palestras'
 }
 
+export const headingsES = {
+	skills: 'Habilidades',
+	talks: 'Conferencias'
+}
+
 export const seeMore = {
 	en: 'See more',
-	pt: 'Ver mais'
+	pt: 'Ver mais',
+	es: 'Ver más'
 }
 
 export const langsEN = {
 	en: 'English',
-	pt: 'Portuguese'
+	pt: 'Portuguese',
+	es: 'Spanish'
 }
 
 export const langsPT = {
 	en: 'Inglês',
-	pt: 'Português'
+	pt: 'Português',
+	es: 'Espanhol'
+}
+
+export const langsES = {
+	en: 'Inglés',
+	pt: 'Portugués',
+	es: 'Español'
 }
 
 export const skillsEN = [
@@ -41,14 +55,29 @@ export const skillsEN = [
 export const skillsPT = [
 	'HTML: SEO, HTML Semântico, Templates Engines (Pug);',
 	'CSS: CSS-in-JS (Emotion, Styled Components), Pré-processadores (SASS, Stylus) e Responsivo;',
-	'JavaScript: Vanilla JS, Frameworks (Angular, React, Vue) State Managers (Redux, Vuex e Zustand) SSR (Next.js, Nuxt.js), Mobile (Ionic, React Native) e TypeScript;',
+	'JavaScript: Vanilla JS, Frameworks (Angular, React, Vue) Gerenciadores de Estado (Redux, Vuex e Zustand) SSR (Next.js, Nuxt.js), Mobile (Ionic, React Native) e TypeScript;',
 	'Node.js: NPM e Yarn;',
-	'Tools: Gulp e webpack;',
+	'Ferramentas: Gulp e webpack;',
 	'Testes Unitários: Jest, Jasmine, Karma, Testing Library;',
 	'Git: Git Flow;',
 	'PWA e Webcomponents;',
 	'Storybook;',
 	'WordPress: desenvolvimento de temas e integração com API;',
+	'Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;',
+	'Kanban - Pair Programming - Scrum;'
+]
+
+export const skillsES = [
+	'HTML: SEO, HTML Semántico, Templates Engines (Pug);',
+	'CSS: CSS-in-JS (Emotion, Styled Components), Preprocessadores (SASS, Stylus) y Responsivo;',
+	'JavaScript: Vanilla JS, Frameworks (Angular, React, Vue) Gestores de estado (Redux, Vuex y Zustand) SSR (Next.js, Nuxt.js), Mobile (Ionic, React Native) y TypeScript;',
+	'Node.js: NPM y Yarn;',
+	'Herramientas: Gulp y webpack;',
+	'Pruebas Unitarias: Jest, Jasmine, Karma, Testing Library;',
+	'Git: Git Flow;',
+	'PWA y Webcomponents;',
+	'Storybook;',
+	'WordPress: desarrollo de temas e integración de API;',
 	'Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;',
 	'Kanban - Pair Programming - Scrum;'
 ]
@@ -71,7 +100,7 @@ export const talksEN = [
 		textButton: 'See slides'
 	},
 	{
-		title: 'ECMAScript I18N API',
+		title: 'ECMAScript I18N API (pt-BR)',
 		year: 2021,
 		event: 'FrontEnd CE',
 		localization: 'YouTube',
@@ -79,7 +108,7 @@ export const talksEN = [
 		textButton: 'See video'
 	},
 	{
-		title: 'PWA',
+		title: 'PWA – Progressive Web Apps (pt-BR)',
 		year: 2020,
 		event: 'Via Varejo',
 		localization: 'São Paulo, SP',
@@ -146,7 +175,7 @@ export const talksPT = [
 		textButton: 'Ver slides'
 	},
 	{
-		title: 'ECMAScript I18N API',
+		title: 'ECMAScript I18N API (pt-BR)',
 		year: 2021,
 		event: 'FrontEnd CE',
 		localization: 'YouTube',
@@ -154,7 +183,7 @@ export const talksPT = [
 		textButton: 'Ver vídeo'
 	},
 	{
-		title: 'PWA',
+		title: 'PWA – Progressive Web Apps (pt-BR)',
 		year: 2020,
 		event: 'Via Varejo',
 		localization: 'São Paulo, SP',
@@ -186,7 +215,82 @@ export const talksPT = [
 		textButton: 'Ver slides'
 	},
 	{
-		title: 'Desempenho de carregamento de página (pt-BR)',
+		title: 'Performance de carregamento de página (pt-BR)',
+		year: 2018,
+		event: 'FEBRACIS',
+		localization: 'Fortaleza, CE',
+		url: 'https://www.instagram.com/p/BjsCAfWBsxz',
+		textButton: 'Ver foto'
+	},
+	{
+		title: 'WordPress (pt-BR)',
+		year: 2018,
+		event: 'WordPress Fortaleza',
+		localization: 'Fortaleza, CE',
+		url: 'https://www.instagram.com/p/BjiOIXLhDD1',
+		textButton: 'Ver foto'
+	}
+]
+
+export const talksES = [
+	{
+		title: 'Explorando nuevas fronteras con AstroJS  (pt-BR)',
+		year: 2024,
+		event: 'FrontEnd CE',
+		localization: 'Fortaleza, CE',
+		url: '/talks/astro.pdf',
+		textButton: 'Ver diapositivas'
+	},
+	{
+		title: 'Angular X React X Vue, ¿cuál es mejor? (pt-BR)',
+		year: 2023,
+		event: 'FrontEnd CE',
+		localization: 'Fortaleza, CE',
+		url: '/talks/angularXreactXvue.pdf',
+		textButton: 'Ver diapositivas'
+	},
+	{
+		title: 'ECMAScript I18N API (pt-BR)',
+		year: 2021,
+		event: 'FrontEnd CE',
+		localization: 'YouTube',
+		url: 'https://www.youtube.com/watch?v=Ey-r2ihP8RY&ab_channel=FrontEndCE',
+		textButton: 'Ver video'
+	},
+	{
+		title: 'PWA – Progressive Web Apps (pt-BR)',
+		year: 2020,
+		event: 'Via Varejo',
+		localization: 'São Paulo, SP',
+		url: '/talks/pwa.pdf',
+		textButton: 'Ver diapositivas'
+	},
+	{
+		title: 'Accesibilidad (pt-BR)',
+		year: 2019,
+		event: 'FrontEnd CE',
+		localization: 'Fortaleza, CE',
+		url: '/talks/acessibilidade.pdf',
+		textButton: 'Ver diapositivas'
+	},
+	{
+		title: 'Git (pt-BR)',
+		year: 2018,
+		event: 'Hangouts',
+		localization: 'Online',
+		url: '/talks/git.pdf',
+		textButton: 'Ver diapositivas'
+	},
+	{
+		title: 'Service Workers (pt-BR)',
+		year: 2018,
+		event: 'Pachy Dev\'s Elephant Coworking',
+		localization: 'Fortaleza, CE',
+		url: '/talks/service_workers.pdf',
+		textButton: 'Ver diapositivas'
+	},
+	{
+		title: 'Rendimiento de carga de la página (pt-BR)',
 		year: 2018,
 		event: 'FEBRACIS',
 		localization: 'Fortaleza, CE',
