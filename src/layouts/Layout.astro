@@ -36,13 +36,13 @@ const { site } = Astro;
 		<title>{title}</title>
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow">
-		<meta property="og:title" content="Gabriel Napolião - Software Developer">
+		<meta property="og:title" content=`${title}`>
 		<meta property="og:description" content={description}>
-		<meta property="og:url" content={`${site}${lang == 'en' ? '' : lang}`}>
-		<meta property="og:site_name" content="Gabriel Napolião - Software Developer">
+		<meta property="og:url" content={`${site}${lang}`}>
+		<meta property="og:site_name" content=`${title}`>
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:description" content={description}>
-		<meta name="twitter:title" content="Gabriel Napolião - Software Developer">
+		<meta name="twitter:title" content=`${title}`>
 		<meta property="og:image" content={`${site}me.webp`}>
 		<meta property="og:type" content="website">
 	</head>
