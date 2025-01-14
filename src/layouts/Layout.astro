@@ -103,6 +103,9 @@ const { site } = Astro;
     font-size: .875rem;
     cursor: pointer;
 	}
+	button:hover {
+		color: rgb(var(--accent));
+	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
@@ -120,30 +123,18 @@ const { site } = Astro;
 	}
 </style>
 <script>
-	// @ts-nocheck
-	const e = document.querySelector("body"),
-		t = document.getElementById("hero-animation"),
-		r = document.querySelectorAll("#hero-animation"),
-		n = document.querySelectorAll(".profile-image");
-	screen.width >= 1100 &&
-  t &&
-  (e.addEventListener("mousemove", function (e) {
-    n.forEach((e) => {
-      e.style.transform = "translateZ(1rem)";
-    }),
-      r.forEach((t) => {
-        let r = (window.innerWidth - 2 * e.pageX) / 100,
-          n = (window.innerHeight - 2 * e.pageY) / 100;
-        t.style.transform = `perspective(1100px) rotateX(${n}deg) rotateY(${r}deg) scale3d(1, 1, 1)`;
-      });
-  }),
-  t.addEventListener("mouseout", function () {
-    n.forEach((e) => {
-      e.style.transform = "translateZ(0)";
-    }),
-      r.forEach((e) => {
-        e.style.transform =
-          "perspective(1100px) scale(1) rotateX(0) rotateY(0)";
-      });
-  }));
+	const heroAnimationContainer = document.getElementById("hero-animation");
+	const profileImage = document.querySelector(".profile-image");
+	if (screen.width >= 1100) {
+		heroAnimationContainer?.addEventListener("mousemove", (ev) => {
+			(profileImage as HTMLElement).style.transform = "translateZ(1rem)";
+			const x = (window.innerWidth - 2 * ev.pageX) / 100;
+			const y = (window.innerHeight - 2 * ev.pageY) / 100;
+			(heroAnimationContainer as HTMLElement).style.transform = `perspective(1100px) rotateX(${y}deg) rotateY(${x}deg) scale3d(1, 1, 1)`;
+		})
+		heroAnimationContainer?.addEventListener("mouseout", () => {
+			(profileImage as HTMLElement).style.transform = "translateZ(0)";
+			(heroAnimationContainer as HTMLElement).style.transform = "perspective(1100px) scale(1) rotateX(0) rotateY(0)";
+		})
+	}
 </script>
