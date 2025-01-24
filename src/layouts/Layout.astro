@@ -25,7 +25,6 @@ const { site } = Astro;
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="preload" as="image" imagesrcset="/fortal_city.webp">
 		<link rel="preload" as="image" imagesrcset="/me.webp">
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -50,7 +49,7 @@ const { site } = Astro;
 	</head>
 	<body>
 		<div id="hero-animation">
-			<img class="background-image" src="/fortal_city.webp" alt=""/>
+			<canvas id="matrix"></canvas>
 			<ProfilePhoto />
 		</div>
 		<slot />
@@ -77,8 +76,9 @@ const { site } = Astro;
 	#hero-animation {
 		transform-style: preserve-3d;
     transition: all .1s;
+		will-change: transform;
 	}
-	.background-image {
+	#matrix {
 		position: absolute;
 		margin-left: auto;
 		margin-right: auto;
@@ -89,16 +89,11 @@ const { site } = Astro;
 		max-width: 1100px;
 		object-fit: cover;
 		pointer-events: none;
-		border-radius: 3rem;
-	}
-	@media screen and (min-width: 1100px) {
-		.background-image {
-			filter: drop-shadow(0 0 2rem rgb(var(--accent)));
-			transform: translateZ(0);
-		}
+		transform: translateZ(0);
+		will-change: transform;
 	}
 	@media screen and (max-width: 427px) {
-		.background-image {
+		#matrix {
 			height: 304px;
 		}
 	}
@@ -131,6 +126,8 @@ const { site } = Astro;
 	}
 </style>
 <script>
+	import cmatrix from "./cmatrix";
+	cmatrix();
 	const heroAnimationContainer = document.getElementById("hero-animation");
 	const profileImage = document.querySelector(".profile-image");
 	if (screen.width >= 1100) {
