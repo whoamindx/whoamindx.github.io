@@ -49,7 +49,7 @@ export const skillsEN = [
 	'Storybook;',
 	'WordPress: theme development and API integration;',
 	'Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;',
-	'Computer Network',
+	'Computer Network;',
 	'Kanban - Pair Programming - Scrum;'
 ]
 
@@ -65,7 +65,7 @@ export const skillsPT = [
 	'Storybook;',
 	'WordPress: desenvolvimento de temas e integração com API;',
 	'Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;',
-	'Rede de Computadores',
+	'Rede de Computadores;',
 	'Kanban - Pair Programming - Scrum;'
 ]
 
@@ -81,7 +81,7 @@ export const skillsES = [
 	'Storybook;',
 	'WordPress: desarrollo de temas e integración de API;',
 	'Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;',
-	'Red de Computadoras',
+	'Red de Computadoras;',
 	'Kanban - Pair Programming - Scrum;'
 ]
 
