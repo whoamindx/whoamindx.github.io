@@ -86,6 +86,13 @@ const permissionDeniedAlertMessage = permissionDeniedAlert[lang as 'en' | 'pt' |
 		transform-style: preserve-3d;
     transition: all .1s;
 		will-change: transform;
+		max-width: 1100px;
+    margin: 0 auto;
+	}
+	@media screen and (min-width: 1100px) {
+		#hero-animation {
+			padding-bottom: 2rem;
+		}
 	}
 	#matrix {
 		position: absolute;
@@ -100,6 +107,7 @@ const permissionDeniedAlertMessage = permissionDeniedAlert[lang as 'en' | 'pt' |
 		pointer-events: none;
 		transform: translateZ(0);
 		will-change: transform;
+		filter: drop-shadow(0 0 2rem rgb(var(--accent)));
 	}
 	@media screen and (max-width: 427px) {
 		#matrix {
