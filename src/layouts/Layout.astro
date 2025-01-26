@@ -9,6 +9,13 @@ interface Props {
 
 const { description, title, lang } = Astro.props;
 const { site } = Astro;
+
+const permissionDeniedAlert = {
+	"en": "Permission to access the gyroscope has been denied.",
+	"pt": "Permissão para acessar o giroscópio foi negada.",
+	"es": "Se ha denegado el permiso para acceder al giroscopio."
+};
+const permissionDeniedAlertMessage = permissionDeniedAlert[lang as "en" | "pt" | "es"];
 ---
 
 <!doctype html>
@@ -37,18 +44,18 @@ const { site } = Astro;
 		<title>{title}</title>
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow">
-		<meta property="og:title" content=`${title}`>
+		<meta property="og:title" content={title}>
 		<meta property="og:description" content={description}>
 		<meta property="og:url" content={`${site}${lang}`}>
-		<meta property="og:site_name" content=`${title}`>
+		<meta property="og:site_name" content={title}>
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:description" content={description}>
-		<meta name="twitter:title" content=`${title}`>
+		<meta name="twitter:title" content={title}>
 		<meta property="og:image" content={`${site}me.webp`}>
 		<meta property="og:type" content="website">
 	</head>
 	<body>
-		<div id="hero-animation">
+		<div id="hero-animation" data-error-message={permissionDeniedAlertMessage}>
 			<canvas id="matrix"></canvas>
 			<ProfilePhoto />
 		</div>
@@ -170,12 +177,8 @@ const { site } = Astro;
 					if (permissionState === "granted") {
 						initDeviceOrientation();
 					} else {
-						const permissionDeniedAlert = {
-							"/en/": "Permission to access the gyroscope has been denied.",
-							"/pt/": "Permissão para acessar o giroscópio foi negada.",
-							"/es/": "Se ha denegado el permiso para acceder al giroscopio."
-						};
-						alert(permissionDeniedAlert[window.location.pathname as "/en/" | "/pt/" | "/es/"]);
+						const permissionDeniedAlertMessage = heroAnimationContainer?.dataset.errorMessage;
+						alert(permissionDeniedAlertMessage);
 					}
 				} catch (error) {
 					console.error("Error requesting permission for DeviceOrientationEvent:", error);

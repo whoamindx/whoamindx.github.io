@@ -39,7 +39,7 @@ export const langsES = {
 
 export const skillsEN = [
 	'HTML: SEO, Semantic HTML, Templates Engines (Pug);',
-	'CSS: CSS-in-JS (Emotion and Styled Components), Preprocessors (SASS, Stylus) and Responsive;',
+	'CSS: CSS-in-JS (Emotion, Styled Components), Preprocessors (SASS, Stylus) and Responsive;',
 	'JavaScript: Vanilla JS, Frameworks (Angular, React and Vue) State Managers (Redux, Vuex and Zustand) SSR (Next.js and Nuxt.js), Mobile (Ionic and React Native) and TypeScript;',
 	'Node.js: NPM and Yarn;',
 	'Tools: Gulp and webpack;',
