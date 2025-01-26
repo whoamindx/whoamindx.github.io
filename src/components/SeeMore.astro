@@ -22,13 +22,15 @@ const { text } = Astro.props;
 	}
 </style>
 <script>
-  const buttons = document.querySelectorAll("[data-see-more]");
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      button.parentElement?.previousElementSibling?.querySelectorAll(".hide").forEach((el) => {
-        el.classList.remove("hide");
-      }),
-      button.parentElement?.remove();
+  document.addEventListener('astro:page-load', () => {
+    const buttons = document.querySelectorAll("[data-see-more]");
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        button.parentElement?.previousElementSibling?.querySelectorAll(".hide").forEach((el) => {
+          el.classList.remove("hide");
+        }),
+        button.parentElement?.remove();
+      });
     });
   });
-  </script>
+</script>
