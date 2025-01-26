@@ -34,14 +34,13 @@ export default function cmatrix() {
 	Data colum object
 	=============
 	*/
-	function Data(x) {
-		this.x = x
-		this.y = 0
-		this.history = []
-		this.historySizeMax = Math.floor(Math.random() * config.maxLength + config.minLength)
-	}
-
-	Data.prototype = {
+	class Data {
+		constructor(x) {
+			this.x = x
+			this.y = 0
+			this.history = []
+			this.historySizeMax = Math.floor(Math.random() * config.maxLength + config.minLength)
+		}
 		update() {
 			this.y += config.size
 			if (this.y >= height + this.historySizeMax * config.size) {
@@ -51,8 +50,7 @@ export default function cmatrix() {
 
 			this.history.unshift(String.fromCharCode(60 + Math.floor(Math.random() * 62)))
 			if (this.history.length > this.historySizeMax) this.history.pop()
-		},
-
+		}
 		draw() {
 			if(Math.random() > 0.995) return
 
@@ -64,7 +62,6 @@ export default function cmatrix() {
 				ctx.fillText(char, this.x, this.y - i * config.size)
 			}
 		}
-
 	}
 
 	var count = Math.floor(width / config.size)
