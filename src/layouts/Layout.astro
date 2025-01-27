@@ -10,54 +10,49 @@ interface Props {
 
 const { description, title, lang } = Astro.props;
 const { site } = Astro;
-
-const permissionDeniedAlert = {
-	'en': 'Permission to access the gyroscope has been denied.',
-	'pt': 'Permissão para acessar o giroscópio foi negada.',
-	'es': 'Se ha denegado el permiso para acceder al giroscopio.'
-};
-const permissionDeniedAlertMessage = permissionDeniedAlert[lang as 'en' | 'pt' | 'es'];
 ---
 
 <!doctype html>
 <html lang={lang}>
 	<head>
-		<script is:inline defer src="https://www.googletagmanager.com/gtag/js?id=G-7P2YRPSRK1"></script>
+		<script data-astro-rerun is:inline defer src="https://www.googletagmanager.com/gtag/js?id=G-7P2YRPSRK1"></script>
 		<script>
 			// @ts-nocheck
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-7P2YRPSRK1');
+			document.addEventListener('astro:page-load', () => {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-7P2YRPSRK1');
+			});
 		</script>
-		<meta charset="UTF-8" />
+		<meta charset="UTF-8" transition:persist/>
 		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="preload" as="image" imagesrcset="/me.webp">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<meta name="theme-color" content="#000">
-		<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-		<meta name="msapplication-navbutton-color" content="#000">
-		<meta name="generator" content={Astro.generator} />
+		<meta name="viewport" content="width=device-width" transition:persist/>
+		<link rel="preload" as="image" imagesrcset="/me.webp" transition:persist>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" transition:persist>
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" transition:persist>
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" transition:persist>
+		<link rel="manifest" href="/site.webmanifest" transition:persist>
+		<meta name="theme-color" content="#000" transition:persist>
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000" transition:persist>
+		<meta name="msapplication-navbutton-color" content="#000" transition:persist>
+		<meta name="generator" content={Astro.generator} transition:persist/>
 		<title>{title}</title>
-		<meta name="robots" content="index, follow">
-		<meta name="googlebot" content="index, follow">
+		<meta name="robots" content="index, follow" transition:persist>
+		<meta name="googlebot" content="index, follow" transition:persist>
 		<meta property="og:title" content={title}>
 		<meta property="og:description" content={description}>
 		<meta property="og:url" content={`${site}${lang}`}>
 		<meta property="og:site_name" content={title}>
-		<meta name="twitter:card" content="summary">
+		<meta name="twitter:card" content="summary" transition:persist>
 		<meta name="twitter:description" content={description}>
 		<meta name="twitter:title" content={title}>
-		<meta property="og:image" content={`${site}me.webp`}>
-		<meta property="og:type" content="website">
+		<meta property="og:image" content={`${site}me.webp`} transition:persist>
+		<meta property="og:type" content="website" transition:persist>
 		<ClientRouter />
 	</head>
 	<body>
-		<div id="hero-animation" data-error-message={permissionDeniedAlertMessage} transition:persist>
+		<div id="hero-animation" transition:persist>
 			<canvas id="matrix"></canvas>
 			<ProfilePhoto />
 		</div>

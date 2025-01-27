@@ -41,7 +41,12 @@ export default function heroAnimation () {
 					if (permissionState === 'granted') {
 						initDeviceOrientation();
 					} else {
-						const permissionDeniedAlertMessage = heroAnimationContainer?.dataset.errorMessage;
+						const permissionDeniedAlert = {
+							'/en': 'Permission to access the gyroscope has been denied.',
+							'/pt': 'Permissão para acessar o giroscópio foi negada.',
+							'/es': 'Se ha denegado el permiso para acceder al giroscopio.'
+						};
+						const permissionDeniedAlertMessage = permissionDeniedAlert[location.pathname as '/en' | '/pt' | '/es'];
 						alert(permissionDeniedAlertMessage);
 					}
 				} catch (error) {
