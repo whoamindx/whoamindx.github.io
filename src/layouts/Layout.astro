@@ -15,15 +15,13 @@ const { site } = Astro;
 <!doctype html>
 <html lang={lang}>
 	<head>
-		<script data-astro-rerun is:inline defer src="https://www.googletagmanager.com/gtag/js?id=G-7P2YRPSRK1"></script>
+		<script is:inline defer src="https://www.googletagmanager.com/gtag/js?id=G-7P2YRPSRK1"></script>
 		<script>
 			// @ts-nocheck
-			document.addEventListener('astro:page-load', () => {
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('config', 'G-7P2YRPSRK1');
-			});
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-7P2YRPSRK1');
 		</script>
 		<meta charset="UTF-8" transition:persist/>
 		<meta name="description" content={description} />
