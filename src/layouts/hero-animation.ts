@@ -22,14 +22,6 @@ export default function heroAnimation () {
 					(profileImage as HTMLElement).style.transform = 'translateZ(4rem)';
 					(heroAnimationContainer as HTMLElement).style.transform = `perspective(1100px) rotateX(${-y}deg) rotateY(${x}deg) scale3d(1, 1, 1)`;
 				});
-				window.addEventListener('devicemotion', (event) => {
-					const acceleration = event.acceleration;
-					// @ts-ignore
-					if (Math.abs(acceleration.x) < 0.1 && Math.abs(acceleration.y) < 0.1) {
-						(profileImage as HTMLElement).style.transform = 'translateZ(0)';
-						(heroAnimationContainer as HTMLElement).style.transform = 'perspective(1100px) scale(1) rotateX(0) rotateY(0)';
-					}
-				});
 			} else {
 				console.warn('The device does not support the DeviceOrientation event.');
 			}
