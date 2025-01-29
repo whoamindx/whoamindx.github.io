@@ -34,11 +34,11 @@ export default function heroAnimation () {
 						initDeviceOrientation();
 					} else {
 						const permissionDeniedAlert = {
-							'/en/': 'Permission to access the gyroscope has been denied.',
-							'/pt/': 'Permissão para acessar o giroscópio foi negada.',
-							'/es/': 'Se ha denegado el permiso para acceder al giroscopio.'
+							'en': 'Permission to access the gyroscope has been denied.',
+							'pt': 'Permissão para acessar o giroscópio foi negada.',
+							'es': 'Se ha denegado el permiso para acceder al giroscopio.'
 						};
-						const permissionDeniedAlertMessage = permissionDeniedAlert[location.pathname as '/en/' | '/pt/' | '/es/'];
+						const permissionDeniedAlertMessage = permissionDeniedAlert[location.pathname.replaceAll('/', '') as 'en' | 'pt' | 'es'];
 						alert(permissionDeniedAlertMessage);
 					}
 				} catch (error) {
