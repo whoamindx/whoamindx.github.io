@@ -1,15 +1,22 @@
 export default function heroAnimation () {
   const heroAnimationContainer = document.getElementById('hero-animation');
 	const profileImage = document.querySelector('.profile-image');
+	const elements = document.querySelectorAll('.element');
 	if (screen.width >= 1100) {
 		heroAnimationContainer?.addEventListener('mousemove', (ev) => {
 			(profileImage as HTMLElement).style.transform = 'translateZ(4rem)';
+			elements.forEach((el) => {
+				(el as HTMLElement).style.transform = 'translateZ(4rem)';
+			});
 			const x = (window.innerWidth - 2 * ev.pageX) / 100;
 			const y = (window.innerHeight - 2 * ev.pageY) / 100;
 			(heroAnimationContainer as HTMLElement).style.transform = `perspective(1100px) rotateX(${y}deg) rotateY(${x}deg) scale3d(1, 1, 1)`;
 		})
 		heroAnimationContainer?.addEventListener('mouseout', () => {
 			(profileImage as HTMLElement).style.transform = 'translateZ(0)';
+			elements.forEach((el) => {
+				(el as HTMLElement).style.transform = 'translateZ(0)';
+			});
 			(heroAnimationContainer as HTMLElement).style.transform = 'perspective(1100px) scale(1) rotateX(0) rotateY(0)';
 		})
 	} else {

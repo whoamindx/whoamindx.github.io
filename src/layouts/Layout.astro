@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from 'astro:transitions';
 import ProfilePhoto from '@/components/ProfilePhoto.astro';
+import Technologies from '@/components/Technologies.astro';
 
 interface Props {
 	description: string;
@@ -54,6 +55,7 @@ const { site } = Astro;
 	<body>
 		<div id="hero-animation" transition:persist>
 			<canvas id="matrix"></canvas>
+			<Technologies />
 			<ProfilePhoto />
 		</div>
 		<slot />
@@ -82,7 +84,7 @@ const { site } = Astro;
     transition: all .1s;
 		will-change: transform;
 		max-width: 1100px;
-    margin: 0 auto;
+    margin: 2rem auto 0;
 	}
 	@media screen and (min-width: 1100px) {
 		#hero-animation {
