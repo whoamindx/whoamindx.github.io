@@ -38,51 +38,51 @@ export const langsES = {
 }
 
 export const skillsEN = [
-	'HTML: SEO, Semantic HTML, Templates Engines (Pug);',
-	'CSS: CSS-in-JS (Emotion, Styled Components), Preprocessors (SASS, Stylus) and Responsive;',
-	'JavaScript: Vanilla JS, Frameworks (Angular, React and Vue) State Managers (Redux, Vuex and Zustand) SSR (Next.js and Nuxt.js), Mobile (Ionic and React Native) and TypeScript;',
-	'Node.js: NPM and Yarn;',
-	'Tools: Gulp and webpack;',
-	'Unity Testing: Jest, Jasmine, Karma, Testing Library;',
-	'Git: Conventional Commits Pattern, Git Flow;',
-	'PWA and Webcomponents;',
-	'Storybook;',
-	'WordPress: theme development and API integration;',
-	'Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;',
-	'Computer Network;',
-	'Kanban - Pair Programming - Scrum;'
+	'<strong>HTML:</strong> SEO, Semantic HTML, Templates Engines (Pug);',
+	'<strong>CSS:</strong> CSS-in-JS (Emotion, Styled Components), Preprocessors (SASS, Stylus) and Responsive;',
+	'<strong>JavaScript:</strong> Vanilla JS, Frameworks (Angular, React and Vue) State Managers (Redux, Vuex and Zustand) SSR (Next.js and Nuxt.js), Mobile (Ionic and React Native) and TypeScript;',
+	'<strong>Node.js:</strong> NPM and Yarn;',
+	'<strong>Tools:</strong> Gulp and webpack;',
+	'<strong>Unity Testing:</strong> Jest, Jasmine, Karma, Testing Library;',
+	'<strong>Git:</strong> Conventional Commits Pattern, Git Flow;',
+	'<strong>PWA and Webcomponents;</strong>',
+	'<strong>Storybook;</strong>',
+	'<strong>WordPress:</strong> theme development and API integration;',
+	'<strong>Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;</strong>',
+	'<strong>Computer Network;</strong>',
+	'<strong>Kanban - Pair Programming - Scrum;</strong>'
 ]
 
 export const skillsPT = [
-	'HTML: SEO, HTML Semântico, Templates Engines (Pug);',
-	'CSS: CSS-in-JS (Emotion, Styled Components), Pré-processadores (SASS, Stylus) e Responsivo;',
-	'JavaScript: Vanilla JS, Frameworks (Angular, React, Vue) Gerenciadores de Estado (Redux, Vuex e Zustand) SSR (Next.js, Nuxt.js), Mobile (Ionic, React Native) e TypeScript;',
-	'Node.js: NPM e Yarn;',
-	'Ferramentas: Gulp e webpack;',
-	'Testes Unitários: Jest, Jasmine, Karma, Testing Library;',
-	'Git: Conventional Commits Pattern, Git Flow;',
-	'PWA e Webcomponents;',
-	'Storybook;',
-	'WordPress: desenvolvimento de temas e integração com API;',
-	'Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;',
-	'Rede de Computadores;',
-	'Kanban - Pair Programming - Scrum;'
+	'<strong>HTML:</strong> SEO, HTML Semântico, Templates Engines (Pug);',
+	'<strong>CSS:</strong> CSS-in-JS (Emotion, Styled Components), Pré-processadores (SASS, Stylus) e Responsivo;',
+	'<strong>JavaScript:</strong> Vanilla JS, Frameworks (Angular, React, Vue) Gerenciadores de Estado (Redux, Vuex e Zustand) SSR (Next.js, Nuxt.js), Mobile (Ionic, React Native) e TypeScript;',
+	'<strong>Node.js:</strong> NPM e Yarn;',
+	'<strong>Ferramentas:</strong> Gulp e webpack;',
+	'<strong>Testes Unitários:</strong> Jest, Jasmine, Karma, Testing Library;',
+	'<strong>Git:</strong> Conventional Commits Pattern, Git Flow;',
+	'<strong>PWA e Webcomponents;</strong>',
+	'<strong>Storybook;</strong>',
+	'<strong>WordPress:</strong> desenvolvimento de temas e integração com API;',
+	'<strong>Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;</strong>',
+	'<strong>Rede de Computadores;</strong>',
+	'<strong>Kanban - Pair Programming - Scrum;</strong>'
 ]
 
 export const skillsES = [
-	'HTML: SEO, HTML Semántico, Templates Engines (Pug);',
-	'CSS: CSS-in-JS (Emotion, Styled Components), Preprocessadores (SASS, Stylus) y Responsivo;',
-	'JavaScript: Vanilla JS, Frameworks (Angular, React, Vue) Gestores de estado (Redux, Vuex y Zustand) SSR (Next.js, Nuxt.js), Mobile (Ionic, React Native) y TypeScript;',
-	'Node.js: NPM y Yarn;',
-	'Herramientas: Gulp y webpack;',
-	'Pruebas Unitarias: Jest, Jasmine, Karma, Testing Library;',
-	'Git: Conventional Commits Pattern, Git Flow;',
-	'PWA y Webcomponents;',
-	'Storybook;',
-	'WordPress: desarrollo de temas e integración de API;',
-	'Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;',
-	'Red de Computadoras;',
-	'Kanban - Pair Programming - Scrum;'
+	'<strong>HTML:</strong> SEO, HTML Semántico, Templates Engines (Pug);',
+	'<strong>CSS:</strong> CSS-in-JS (Emotion, Styled Components), Preprocessadores (SASS, Stylus) y Responsivo;',
+	'<strong>JavaScript:</strong> Vanilla JS, Frameworks (Angular, React, Vue) Gestores de estado (Redux, Vuex y Zustand) SSR (Next.js, Nuxt.js), Mobile (Ionic, React Native) y TypeScript;',
+	'<strong>Node.js:</strong> NPM y Yarn;',
+	'<strong>Herramientas:</strong> Gulp y webpack;',
+	'<strong>Pruebas Unitarias:</strong> Jest, Jasmine, Karma, Testing Library;',
+	'<strong>Git:</strong> Conventional Commits Pattern, Git Flow;',
+	'<strong>PWA y Webcomponents;</strong>',
+	'<strong>Storybook;</strong>',
+	'<strong>WordPress:</strong> desarrollo de temas e integración de API;',
+	'<strong>Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;</strong>',
+	'<strong>Red de Computadoras;</strong>',
+	'<strong>Kanban - Pair Programming - Scrum;</strong>'
 ]
 
 export const talksEN = [

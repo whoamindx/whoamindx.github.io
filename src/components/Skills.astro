@@ -13,8 +13,8 @@ const { skills, headingText, textSeeMore } = Astro.props
 <h2 class="h2">
 	<span class="text-gradient">{headingText}:</span>
 </h2>
-<ul>
-  {skills.map((skill, i) => <li class:list={[{ hide: i>2 }]}>{skill}</li>)}
+<ul class="skills-list">
+  {skills.map((skill, i) => <li class:list={[{ hide: i>2 }]} set:html={skill}></li>)}
 </ul>
 <SeeMore text={textSeeMore} />
 <style>
@@ -24,5 +24,11 @@ const { skills, headingText, textSeeMore } = Astro.props
 	li {
 		font-size: 1rem;
 		margin: 5px 0;
+		font-weight: 100;
+	}
+</style>
+<style is:global>
+	.skills-list strong {
+		font-weight: 900;
 	}
 </style>
