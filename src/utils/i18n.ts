@@ -38,51 +38,54 @@ export const langsES = {
 }
 
 export const skillsEN = [
-	'<strong>HTML:</strong> SEO, Semantic HTML, Templates Engines (Pug);',
+	'<strong>HTML:</strong> SEO, Semantic HTML, Templates Engines (Pug), WAI-ARIA, WCAG;',
 	'<strong>CSS:</strong> CSS-in-JS (Emotion, Styled Components), Preprocessors (SASS, Stylus) and Responsive;',
 	'<strong>JavaScript:</strong> Vanilla JS, Frameworks (Angular, React and Vue) State Managers (Redux, Vuex and Zustand) SSR (Next.js and Nuxt.js), Mobile (Ionic and React Native) and TypeScript;',
-	'<strong>Node.js:</strong> NPM and Yarn;',
-	'<strong>Tools:</strong> Gulp and webpack;',
-	'<strong>Unity Testing:</strong> Jest, Jasmine, Karma, Testing Library;',
+	'<strong>Node.js:</strong> NPM, Yarn;',
+	'<strong>Tools:</strong> Gulp, Webpack;',
+	'<strong>Unit Testing:</strong> Jest, Jasmine, Karma, Testing Library;',
 	'<strong>Git:</strong> Conventional Commits Pattern, Git Flow;',
-	'<strong>PWA and Webcomponents;</strong>',
+	'<strong>PWA & Web Components;</strong>',
 	'<strong>Storybook;</strong>',
 	'<strong>WordPress:</strong> theme development and API integration;',
 	'<strong>Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;</strong>',
-	'<strong>Computer Network;</strong>',
-	'<strong>Kanban - Pair Programming - Scrum;</strong>'
+	'<strong>Kanban - Pair Programming - Scrum;</strong>',
+	'<strong>Adobe Experience Manager (AEM);</strong>',
+	'<strong>Computer Network;</strong>'
 ]
 
 export const skillsPT = [
-	'<strong>HTML:</strong> SEO, HTML Semântico, Templates Engines (Pug);',
+	'<strong>HTML:</strong> SEO, HTML Semântico, Templates Engines (Pug), WAI-ARIA, WCAG;',
 	'<strong>CSS:</strong> CSS-in-JS (Emotion, Styled Components), Pré-processadores (SASS, Stylus) e Responsivo;',
 	'<strong>JavaScript:</strong> Vanilla JS, Frameworks (Angular, React, Vue) Gerenciadores de Estado (Redux, Vuex e Zustand) SSR (Next.js, Nuxt.js), Mobile (Ionic, React Native) e TypeScript;',
-	'<strong>Node.js:</strong> NPM e Yarn;',
-	'<strong>Ferramentas:</strong> Gulp e webpack;',
+	'<strong>Node.js:</strong> NPM, Yarn;',
+	'<strong>Ferramentas:</strong> Gulp, Webpack;',
 	'<strong>Testes Unitários:</strong> Jest, Jasmine, Karma, Testing Library;',
 	'<strong>Git:</strong> Conventional Commits Pattern, Git Flow;',
-	'<strong>PWA e Webcomponents;</strong>',
+	'<strong>PWA & Web Components;</strong>',
 	'<strong>Storybook;</strong>',
 	'<strong>WordPress:</strong> desenvolvimento de temas e integração com API;',
 	'<strong>Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;</strong>',
-	'<strong>Rede de Computadores;</strong>',
-	'<strong>Kanban - Pair Programming - Scrum;</strong>'
+	'<strong>Kanban - Pair Programming - Scrum;</strong>',
+	'<strong>Adobe Experience Manager (AEM);</strong>',
+	'<strong>Rede de Computadores;</strong>'
 ]
 
 export const skillsES = [
-	'<strong>HTML:</strong> SEO, HTML Semántico, Templates Engines (Pug);',
+	'<strong>HTML:</strong> SEO, HTML Semántico, Templates Engines (Pug), WAI-ARIA, WCAG;',
 	'<strong>CSS:</strong> CSS-in-JS (Emotion, Styled Components), Preprocessadores (SASS, Stylus) y Responsivo;',
 	'<strong>JavaScript:</strong> Vanilla JS, Frameworks (Angular, React, Vue) Gestores de estado (Redux, Vuex y Zustand) SSR (Next.js, Nuxt.js), Mobile (Ionic, React Native) y TypeScript;',
-	'<strong>Node.js:</strong> NPM y Yarn;',
-	'<strong>Herramientas:</strong> Gulp y webpack;',
+	'<strong>Node.js:</strong> NPM, Yarn;',
+	'<strong>Herramientas:</strong> Gulp, Webpack;',
 	'<strong>Pruebas Unitarias:</strong> Jest, Jasmine, Karma, Testing Library;',
 	'<strong>Git:</strong> Conventional Commits Pattern, Git Flow;',
-	'<strong>PWA y Webcomponents;</strong>',
+	'<strong>PWA & Web Components;</strong>',
 	'<strong>Storybook;</strong>',
 	'<strong>WordPress:</strong> desarrollo de temas e integración de API;',
 	'<strong>Arch Linux, Docker, Ubuntu, Red Hat EL, WSL;</strong>',
-	'<strong>Red de Computadoras;</strong>',
-	'<strong>Kanban - Pair Programming - Scrum;</strong>'
+	'<strong>Kanban - Pair Programming - Scrum;</strong>',
+	'<strong>Adobe Experience Manager (AEM);</strong>',
+	'<strong>Red de Computadoras;</strong>'
 ]
 
 export const talksEN = [
